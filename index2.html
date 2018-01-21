@@ -26,17 +26,45 @@
     <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
     <link href="css/YTPlayer.css" rel="stylesheet">
+    <!--<link href='css/particleStyle.css'>-->
 
-  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='./particle_generator/style.css'>
+    <script src='./particle_generator/main.js'></script>
 
-  
     <!--[if lt IE 9]>
         <script src="./js/html5shiv.js"></script>
         <script src="./js/respond.js"></script>
     <![endif]-->
 
+
 </head>
 <body>
+
+<nav class="navbar navbar-inverse particle">
+    <div class="container-fluid particle">
+        <div class="navbar-header particle">
+            <button type="button" class="navbar-toggle particle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse particle" id="myNavbar">
+            <ul class="nav navbar-nav particle">
+                <li class="active rocketToggle">Toggle Rocket Ship</li>
+                <li class="active ballSize">Max Ball Size <input id="ballSizePx" type="number" placeholder="px"></li>
+                <li class="active transTime">Transition Time <input id="transitionTime" type="number" placeholder="s"></li>
+                <li class="active randomTransTime selected">Random Trans Time<input id="randomTransitionTime" type="checkbox" checked></li>
+                <li class="active randomSize selected">Random Size<input id='randomSizeCheckbox' type="checkbox" checked></li>
+                <li class="active transDelay">Transition delay<input type="number" id="transitionDelayInput" placeholder="s"></li>
+                <li class="active linearTransition selected">Non-Linear Transition<input type="checkbox" id="linearTransitionCheckbox" checked></li>
+                <li class="active" class = 'randomResizeTrans'>random resize<input type="checkbox" id="randomResizeCheckbox" checked><input type="number" placeholder="px" id="randomResizeInput"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
     
     <div id="ip-container" class="ip-container">
         <header class="ip-header">
@@ -54,16 +82,16 @@
         
         <header id="header">
             <div class="jt_row container">
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <div class="navbar-header page-scroll portfolio">
+                    <button type="button" class="navbar-toggle portfolio" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand normal" href="#home"><img src="images/logo.png" alt="STORM Theme"/></a>
                     <a class="navbar-brand mini" href="#home">STORM</a>
 
               </div>
-                <nav class="collapse navbar-collapse navbar-main-collapse">
-                    <ul id="nav" class="nav navbar-nav navigation">
+                <nav class="collapse navbar-collapse navbar-main-collapse portfolio">
+                    <ul id="nav" class="nav navbar-nav navigation portfolio">
                         <li class="page-scroll menu-item"><a href="#home-slider">Home</a></li>
                         <li class="page-scroll menu-item"><a href="#features">Features</a></li>
                         <li class="page-scroll menu-item"><a href="#about">About</a></li>
@@ -81,7 +109,7 @@
 
 
         <!-- BEGIN SLIDER SECTION -->
-        <section id="home-slider" class="player section" data-property="{videoURL:'',containment:'self',autoPlay:true, mute:true, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">
+        <section id="home-slider" class="player section contentWrapper" data-property="{videoURL:'',containment:'self',autoPlay:true, mute:true, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">
 
             
             <div class="slide-content">
@@ -111,7 +139,7 @@
 
 
         <!-- BEGIN FEATURES SECTION -->
-        <section id="features" class="section center">
+        <section style='background-color: lightblue' id="features" class="section center">
             <div class="container">
             
                 <div class="jt_row jt_row-fluid row">
@@ -939,7 +967,7 @@
         <footer id="footer" class="section footer" role="contentinfo">
             <div class="container">
                 <h3 class="title thin">get social</h3>
-                <nav class="nav">
+                <nav class="nav portfolio">
                     <div class="menu">
                         <ul >
                             <li class="menu__item menu__item--social"><a href="#">Twitter</a></li>

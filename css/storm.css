@@ -398,19 +398,25 @@ p {
    ============================== */
 
 
-#header {
-	position: absolute;
-	top:50px;
-	left: 0px;
-	z-index:1001;
-	width: 100%;
-	font-family: "Open Sans";
-	font-size: 15px;
-font-style: normal;
-font-weight: normal;
-	text-align: center;
+	#header {
+		position: absolute;
+		top: 50px;
+		z-index: 1001;
+		font-family: "Open Sans";
+		font-size: 15px;
+		font-style: normal;
+		font-weight: normal;
+		text-align: center;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#header.overflow {
+		width: 100vw;
+		left: 0;
+		transform: none;
+	}
 
-}
 	#header .container {width: 97%;}
 	.navbar-collapse {padding-right:0px;}
 	#header.overflow {
@@ -545,7 +551,7 @@ font-weight: normal;
 		cursor: pointer;
 		width: 50px;
 		height: 50px;
-		background: url(../demo/corner.png);
+		/*background-image: url('../demo/corner.png');*/
 		position: absolute;
 		top: 45px;
 		left: -55px;
@@ -1240,7 +1246,7 @@ h3.title.thin {
 .customNavigation{
   text-align: center;
 }
-//use styles below to disable ugly selection
+/*//use styles below to disable ugly selection*/
 .customNavigation a{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -3605,7 +3611,7 @@ img.mfp-img {
 	}
 }
 /* Note: Design for a width of 1024px */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1000px) {
 	.container {width: 100%;}
 	.section .full-width {width: 100%;}
 	.voffset10  { margin-top: 5px; }
@@ -3754,7 +3760,7 @@ margin-bottom: 50px;
 
 
 	.navbar-brand.mini img {margin-top:3px;}
-	.navbar-nav > li {padding: 15px 6px 15px 5px;}
+	.navbar-nav.portfolio > li {padding: 15px 6px 15px 5px;}
 	#header .menu-item a, #header.overflow .menu-item a {
 		font-size: 11px;
 		line-height: 18px;
@@ -3944,7 +3950,7 @@ margin-bottom: 50px;
 /* Note: Design for a width of 768px */
 @media only screen and (max-width : 768px) {
 	.team-wrapper .team-member .hover .blur {padding:0px;}
-	.navbar-header {float: none;}
+	.navbar-header.portfolio {float: none;}
 	.features li {
 		margin-top:0px;
 		margin-bottom: 35px;
@@ -3956,13 +3962,13 @@ margin-bottom: 50px;
 		margin-bottom: 10px;
 		margin-top: 5px;
 	}
-	.navbar-nav {
+	.navbar-nav.portfolio {
 		height: 0px;
 		overflow: hidden;
 	}
 	.section.player {/*display: none;*/ height: 70vh !important; margin-bottom: 200px; top:-150px;}
-	.navbar-toggle {display: block;}
-	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {margin:0px;}
+	.navbar-toggle.portfolio {display: block;}
+	.container > .navbar-header.portfolio, .container-fluid > .navbar-header.portfolio, .container > .navbar-collapse.portfolio, .container-fluid > .navbar-collapse.portfolio {margin:0px;}
 	.megabutton {
 		margin-bottom:-10px;
 	}
@@ -4016,8 +4022,8 @@ margin-bottom: 50px;
 	#owl-main .owl-pagination {
 		top:-85px;
 	}
-	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {display: block;margin:0px auto; }
-	.navbar-collapse {
+	.container > .navbar-header.portfolio, .container-fluid > .navbar-header.portfolio, .container > .navbar-collapse.portfolio, .container-fluid > .navbar-collapse.portfolio {display: block;margin:0px auto; }
+	.navbar-collapse.portfolio {
 		height: 0px;
 		border:0px;
 		box-shadow:none;
@@ -4593,7 +4599,7 @@ margin-bottom: 50px;
 #features {
 		padding-top: 25vw;
 	}
-	.navbar-nav > li {
+	.navbar-nav.portfolio > li {
 		float: none;
 	}
 	#our-studio-presentation {
@@ -4798,7 +4804,7 @@ margin-left: -2600px;
 		top: 360px;
 	}
 
-	.navbar-nav {
+	.navbar-nav.portfolio {
 		margin-top: 10px;
 	}
 
@@ -5066,7 +5072,7 @@ margin-left: -2600px;
 	}
 
 	.box {
-		width: 100%%;
+		width: 100%;
 	}
 
 }
@@ -5079,7 +5085,7 @@ margin-left: -2600px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-
+}
 
 .site {
   overflow: hidden;
@@ -5168,7 +5174,7 @@ nav ul{
 .customNavigation{
   text-align: center;
 }
-//use styles below to disable ugly selection
+/*//use styles below to disable ugly selection*/
 .customNavigation a{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -5178,18 +5184,18 @@ nav ul{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-header{
+.navbar-header.portfolio {
 	display: block;
 	margin: 0 auto;
 }
 
 .customNavigation a.prev {
 	position: absolute !important;
-	left: 40 !important;
+	left: 40px !important;
 }
 
 .customNavigation a.next {
 	position: absolute !important;
-	right: 40 !important;
+	right: 40px !important;
 }
 
