@@ -1,0 +1,47 @@
+
+.yellow #owl-main .owl-controls .owl-page.active span, .yellow #owl-main .owl-controls.clickable .owl-page:hover span {
+			border-color:#E5D43E;	
+		}
+.yellow .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page.active span, .yellow .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page:hover span{border-color:#E5D43E;	}
+.yellow #header.overflow {background-color: rgba(229, 212, 62, 0.9) !important;}
+.yellow .section .title {border-color:#E5D43E;}
+.yellow .title:before, .yellow .contact .title:before,.yellow  .contact .supertitle:before, .yellow .pricing .heading:before, .yellow .we-are a.selected h4:before, .yellow .project-info h4::after, .yellow .prev1::before, .yellow .next1::before {background-color:#E5D43E !important; }
+
+.yellow .btn:hover {background-color:#E5D43E;border-color: #E5D43E !important;}
+.yellow .btn--primary {background-color: #E5D43E;}
+.yellow .btn--primary:hover {background-color: transparent;}
+.yellow .pricing .btn--alt {border-color:#E5D43E;background-color: transparent !important;}
+.yellow .project-info .btn, .yellow .pricing .btn {background-color: #E5D43E;}
+.yellow a.close.top {background: url('../../images/close-project-yellow.png') no-repeat;}
+.yellow .pricing .btn:hover {border-color: #E5D43E !important; background-color: transparent;}
+.yellow .pricing .btn--alt:hover { background-color: #E5D43E !important;}
+.yellow .btn--alt:hover {background-color:#E5D43E; border-color: #E5D43E; }
+.yellow #team-members .info {background-color: rgba(229, 212, 62, 0.9);}
+.yellow #header .menu-item.current a, .yellow #header .menu-item a:hover {border-bottom-color:#E5D43E;}
+.yellow .options-head {background: #E5D43E; }
+.yellow .carousel-wrapper.with_buttons .owl-controls .owl-buttons div,.yellow .carousel-wrapper.with_buttons .owl-controls .owl-buttons div.owl-next {background-color: #E5D43E; }
+.yellow .carousel-wrapper.full .generic-carousel .owl-item .ulitem li .icon {background: #E5D43E; }
+.yellow .carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .yellow .carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background: #E5D43E; }
+.yellow .team-wrapper .team-member .hover .name {color: #E5D43E;}
+.yellow .team-wrapper .team-member .hover .hover-border {border-color:#E5D43E;}
+.yellow .folio-filter li a.selected, .yellow .folio-filter li a:hover {
+	background:#E5D43E;
+	border-color:#E5D43E;
+}
+.yellow .portfolio-dark-overlay {background:rgba(229, 212, 62, 0.9);}
+.yellow .section .button:hover, .yellow .section .button.playstop, .yellow .contact-form .submit, .yellow .section .button.inverse {border-color:#E5D43E;}
+.yellow #footer .thanks, #testimonials, #our-story, .pag-more:hover {background-color: #E5D43E; }
+.yellow .slide-sep, .yellow .section .ball {background: #E5D43E;}
+
+.yellow .blog-posts .month {color: #E5D43E;}
+.yellow .blog-dark-overlay { background: #E5D43E;}
+/*.yellow .video {background: linear-gradient(356deg, rgba(255, 255, 255, 0) 30%, #E5D43E 13%, #E5D43E 87%, rgba(255, 255, 255, 0) 87%);}
+*/
+.yellow .video::before { background-color: rgba(229, 212, 62, 0.6); }
+.yellow .contact i {color: #E5D43E;}
+.yellow .pricing .pro:before {
+  content: url("../../images/popular-yellow.png");
+ }
+
+ .yellow .quote { background-color: #E5D43E;}
+ .yellow .contact .supertitle:before, .yellow #blog-detail .supertitle:before {background-color: #E5D43E; }

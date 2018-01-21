@@ -1,0 +1,44 @@
+
+#owl-main .owl-controls .owl-page.active span, #owl-main .owl-controls.clickable .owl-page:hover span {
+			border-color:#B95D82;	
+		}
+.carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page.active span, .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page:hover span{border-color:#B95D82;	}
+#header.overflow {background-color: rgba(185, 93, 130, 0.9) !important;}
+.section .title {border-color:#B95D82;}
+.title:before, .contact .title:before, .contact .supertitle:before, .pricing .heading:before, .we-are a.selected h4:before, .project-info h4::after, .prev1::before, .next1::before {background-color:#B95D82 !important; }
+
+.btn:hover {background-color:#B95D82;border-color: #B95D82 !important;}
+.btn--primary {background-color: #B95D82;}
+.btn--primary:hover {background-color: transparent;}
+.pricing .btn--alt {border-color:#B95D82;background-color: transparent !important;}
+.pricing .btn--alt:hover { background-color: #B95D82 !important;}
+.project-info .btn, .pricing .btn {background-color: #B95D82;}
+a.close.top {background: url('../../images/close-project-pink.png') no-repeat;}
+.pricing .btn:hover {border-color: #B95D82 !important; background-color: transparent;}
+.btn--alt:hover {background-color:#B95D82; border-color: #B95D82; }
+#team-members .info {background-color: rgba(185, 93, 130, 0.9);}
+#header .menu-item.current a, #header .menu-item a:hover {border-bottom-color:#B95D82;}
+.options-head {background: #B95D82; }
+.carousel-wrapper.with_buttons .owl-controls .owl-buttons div,.carousel-wrapper.with_buttons .owl-controls .owl-buttons div.owl-next {background-color: #B95D82; }
+.carousel-wrapper.full .generic-carousel .owl-item .ulitem li .icon {background: #B95D82; }
+.carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background: #B95D82; }
+.team-wrapper .team-member .hover .name {color: #B95D82;}
+.team-wrapper .team-member .hover .hover-border {border-color:#B95D82;}
+.folio-filter li a.selected, .folio-filter li a:hover {
+	background:#B95D82;
+	border-color:#B95D82;
+}
+.portfolio-dark-overlay {background:#B95D82;}
+.section .button:hover, .section .button.playstop, .contact-form .submit, .section .button.inverse {border-color:#B95D82;}
+#footer .thanks, #testimonials, #our-story, .pag-more:hover {background-color: #B95D82; }
+.slide-sep, .section .ball {background: #B95D82;}
+
+.blog-posts .month {color: #B95D82;}
+.video {background: linear-gradient(356deg, rgba(255, 255, 255, 0) 30%, #B95D82 13%, #B95D82 87%, rgba(255, 255, 255, 0) 87%);}
+.contact i {color: #B95D82;}
+.pricing .pro:before {
+  content: url("../../images/popular-pink.png");
+ }
+
+ .blog .quote { background-color: #B95D82;}
+ .contact .supertitle:before, #blog-detail .supertitle:before {background-color: #B95D82; }

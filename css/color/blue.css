@@ -1,0 +1,48 @@
+
+.blue #owl-main .owl-controls .owl-page.active span, .blue #owl-main .owl-controls.clickable .owl-page:hover span {
+			border-color:#768FAC;	
+		}
+.blue .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page.active span,.blue  .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page:hover span{border-color:#768FAC;	}
+.blue #header.overflow {background-color: rgba(118, 143, 172, 0.9) !important;}
+.blue .section .title {border-color:#768FAC;}
+.blue .title:before, .blue .contact .title:before, .blue .contact .supertitle:before, .blue .pricing .heading:before, .blue .we-are a.selected h4:before, .blue .project-info h4::after, .blue .prev1::before, .blue .next1::before {background-color:#768FAC !important; }
+
+.blue .btn:hover {background-color:#768FAC;border-color: #768FAC !important;}
+.blue .btn--primary {background-color: #768FAC;}
+.blue .btn--primary:hover {background-color: transparent;}
+.blue .pricing .btn--alt {border-color:#768FAC;background-color: transparent !important;}
+.blue .pricing .btn--alt:hover { background-color: #768FAC !important;}
+.blue .project-info .btn, .blue .pricing .btn {background-color: #768FAC;}
+.blue a.close.top {background: url('../../images/close-project-blue.png') no-repeat;}
+.blue .pricing .btn:hover {border-color: #768FAC !important; background-color: transparent;}
+.blue .btn--alt:hover {background-color:#768FAC; border-color: #768FAC; }
+.blue #team-members .info {background-color: rgba(118, 143, 172, 0.9);}
+.blue #header .menu-item.current a, .blue #header .menu-item a:hover {border-bottom-color:#768FAC;}
+.blue .options-head {background: #768FAC; }
+.blue .carousel-wrapper.with_buttons .owl-controls .owl-buttons div,.blue .carousel-wrapper.with_buttons .owl-controls .owl-buttons div.owl-next {background-color: #768FAC; }
+.blue .carousel-wrapper.full .generic-carousel .owl-item .ulitem li .icon {background: #768FAC; }
+.blue .carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .blue .carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background: #768FAC; }
+.blue .team-wrapper .team-member .hover .name {color: #768FAC;}
+.blue .team-wrapper .team-member .hover .hover-border {border-color:#768FAC;}
+.blue .folio-filter li a.selected, .blue .folio-filter li a:hover {
+	background:#768FAC;
+	border-color:#768FAC;
+}
+.blue .portfolio-dark-overlay {background:rgba(118, 143, 172, 0.9);}
+.blue .section .button:hover, .blue .section .button.playstop, .blue .contact-form .submit, .blue .section .button.inverse {border-color:#768FAC;}
+.blue #footer .thanks, .blue #testimonials, .blue #our-story, .blue .pag-more:hover {background-color: #768FAC; }
+.blue .slide-sep, .blue .section .ball {background: #768FAC;}
+
+.blue .blog-posts .month {color: #768FAC;}
+.blue .blog-dark-overlay { background: #768FAC;}
+
+/*.blue .video {background: linear-gradient(356deg, rgba(255, 255, 255, 0) 30%, #768FAC 13%, #768FAC 87%, rgba(255, 255, 255, 0) 87%);}
+*/
+.blue .video::before { background-color: RGBA(118, 143, 172, 0.6); }
+.blue .contact i {color: #768FAC;}
+
+.blue .pricing .pro:before {
+  content: url("../../images/popular-blue.png");
+ }
+ .blue .quote { background-color: #768FAC;}
+ .blue .contact .supertitle:before,.blue  #blog-detail .supertitle:before {background-color: #768FAC; }

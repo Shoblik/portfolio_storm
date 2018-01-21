@@ -1,0 +1,47 @@
+
+.orange #owl-main .owl-controls .owl-page.active span, .orange #owl-main .owl-controls.clickable .owl-page:hover span {
+			border-color:#DD7E43;	
+		}
+.orange .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page.active span, .orange .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page:hover span{border-color:#DD7E43;	}
+.orange #header.overflow {background-color: rgba(221, 126, 67, 0.9) !important;}
+.orange .section .title {border-color:#DD7E43;}
+.orange .title:before, .orange .contact .title:before, .orange .contact .supertitle:before, .orange .pricing .heading:before, .orange .we-are a.selected h4:before, .orange .project-info h4::after, .orange .prev1::before, .orange .next1::before {background-color:#DD7E43 !important; }
+
+.orange .btn:hover {background-color:#DD7E43;border-color: #DD7E43 !important;}
+.orange .btn--primary {background-color: #DD7E43;}
+.orange .btn--primary:hover {background-color: transparent;}
+.orange .pricing .btn--alt {border-color:#DD7E43;background-color: transparent !important;}
+.orange .pricing .btn--alt:hover { background-color: #DD7E43 !important;}
+.orange .project-info .btn, .orange .pricing .btn {background-color: #DD7E43;}
+.orange a.close.top {background: url('../../images/close-project-orange.png') no-repeat;}
+.orange .pricing .btn:hover {border-color: #DD7E43 !important; background-color: transparent;}
+.orange .btn--alt:hover {background-color:#DD7E43; border-color: #DD7E43; }
+.orange #team-members .info {background-color: rgba(221, 126, 67, 0.9);}
+.orange #header .menu-item.current a, .orange #header .menu-item a:hover {border-bottom-color:#DD7E43;}
+.orange .options-head {background: #DD7E43; }
+.orange .carousel-wrapper.with_buttons .owl-controls .owl-buttons div,.orange .carousel-wrapper.with_buttons .owl-controls .owl-buttons div.owl-next {background-color: #DD7E43; }
+.orange .carousel-wrapper.full .generic-carousel .owl-item .ulitem li .icon {background: #DD7E43; }
+.orange .carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .orange .carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background: #DD7E43; }
+.orange .team-wrapper .team-member .hover .name {color: #DD7E43;}
+.orange .team-wrapper .team-member .hover .hover-border {border-color:#DD7E43;}
+.orange .folio-filter li a.selected, .orange .folio-filter li a:hover {
+	background:#DD7E43;
+	border-color:#DD7E43;
+}
+.orange .portfolio-dark-overlay {background:rgba(221, 126, 67, 0.9);}
+.orange .section .button:hover, .orange .section .button.playstop, .orange .contact-form .submit, .orange .section .button.inverse {border-color:#DD7E43;}
+.orange #footer .thanks, .orange #testimonials, .orange #our-story, .orange .pag-more:hover {background-color: #DD7E43; }
+.orange .slide-sep, .orange .section .ball {background: #DD7E43;}
+
+.orange .blog-posts .month {color: #DD7E43;}
+.orange .blog-dark-overlay { background: #DD7E43;}
+
+/*.orange .video {background: linear-gradient(356deg, rgba(255, 255, 255, 0) 30%, #DD7E43 13%, #DD7E43 87%, rgba(255, 255, 255, 0) 87%);}
+*/
+.orange .video::before { background-color: RGBA(221, 126, 67, 0.6); }
+.orange .contact i {color: #DD7E43;}
+.orange .pricing .pro:before {
+  content: url("../../images/popular-orange.png");
+ }
+ .orange .quote { background-color: #DD7E43;}
+ .orange .contact .supertitle:before, .orange #blog-detail .supertitle:before {background-color: #DD7E43; }

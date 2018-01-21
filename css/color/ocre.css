@@ -1,0 +1,47 @@
+
+.ocre #owl-main .owl-controls .owl-page.active span, .ocre #owl-main .owl-controls.clickable .owl-page:hover span {
+			border-color:#B8AB69;	
+		}
+.ocre .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page.active span, .ocre .carousel-wrapper.with_pagination.round_inner .owl-theme .owl-controls .owl-page:hover span{border-color:#B8AB69;	}
+.ocre #header.overflow {background-color: rgba(184, 171, 105, 0.9) !important;}
+.ocre .section .title {border-color:#B8AB69;}
+.ocre .title:before, .ocre .contact .title:before, .ocre .contact .supertitle:before, .ocre .pricing .heading:before, .ocre .we-are a.selected h4:before, .ocre .project-info h4::after, .ocre .prev1::before, .ocre .next1::before {background-color:#B8AB69 !important; }
+
+.ocre .btn:hover {background-color:#B8AB69;border-color: #B8AB69 !important;}
+.ocre .btn--primary {background-color: #B8AB69;}
+.ocre .btn--primary:hover {background-color: transparent;}
+.ocre .pricing .btn--alt {border-color:#B8AB69;background-color: transparent !important;}
+.ocre .pricing .btn--alt:hover { background-color: #B8AB69 !important;}
+.ocre .project-info .btn, .ocre .pricing .btn {background-color: #B8AB69;}
+.ocre a.close.top {background: url('../../images/close-project-ocre.png') no-repeat;}
+.ocre .pricing .btn:hover {border-color: #B8AB69 !important; background-color: transparent;}
+.ocre .btn--alt:hover {background-color:#B8AB69; border-color: #B8AB69; }
+.ocre #team-members .info {background-color: rgba(184, 171, 105, 0.9);}
+.ocre #header .menu-item.current a, .ocre #header .menu-item a:hover {border-bottom-color:#B8AB69;}
+.ocre .options-head {background: #B8AB69; }
+.ocre .carousel-wrapper.with_buttons .owl-controls .owl-buttons div,.carousel-wrapper.with_buttons .owl-controls .owl-buttons div.owl-next {background-color: #B8AB69; }
+.ocre .carousel-wrapper.full .generic-carousel .owl-item .ulitem li .icon {background: #B8AB69; }
+.ocre .carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background: #B8AB69; }
+.ocre .team-wrapper .team-member .hover .name {color: #B8AB69;}
+.ocre .team-wrapper .team-member .hover .hover-border {border-color:#B8AB69;}
+.ocre .folio-filter li a.selected, .ocre .folio-filter li a:hover {
+	background:#B8AB69;
+	border-color:#B8AB69;
+}
+.ocre .portfolio-dark-overlay {background:rgba(184, 171, 105, 0.9);}
+.ocre .section .button:hover, .ocre .section .button.playstop, .ocre .contact-form .submit, .ocre .section .button.inverse {border-color:#B8AB69;}
+.ocre #footer .thanks, .ocre #testimonials, .ocre #our-story, .ocre .pag-more:hover {background-color: #B8AB69; }
+.ocre .slide-sep, .ocre .section .ball {background: #B8AB69;}
+
+.ocre .blog-posts .month {color: #B8AB69;}
+.ocre .blog-dark-overlay { background: #B8AB69;}
+
+/*.ocre .video {background: linear-gradient(356deg, rgba(255, 255, 255, 0) 30%, #B8AB69 13%, #B8AB69 87%, rgba(255, 255, 255, 0) 87%);}
+*/
+.ocre .video::before { background-color: RGBA(184, 171, 105, 0.6); }
+.ocre .contact i {color: #B8AB69;}
+.ocre .pricing .pro:before {
+  content: url("../../images/popular-ocre.png");
+ }
+ .ocre .quote { background-color: #B8AB69;}
+ .ocre .contact .supertitle:before, .ocre #blog-detail .supertitle:before {background-color: #B8AB69; }
