@@ -440,9 +440,9 @@ p {
 			border-color: #ffffff;
 		}
 
-		
-		
-		
+
+
+
 		#header.overflow .navbar-nav > li {padding-bottom:13px;}
 	#header.overflow.fixed {
 		top:0px;
@@ -510,7 +510,7 @@ p {
 			text-shadow: 0px 0px 1px transparent;
 		}
 
-		
+
 
 	#header .jt_row {padding-top:0px;}
 
@@ -621,7 +621,7 @@ p {
 	height: 30px;
 	margin: 5px;
 	float: left;
-	cursor: pointer;	
+	cursor: pointer;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -658,9 +658,9 @@ p {
    8. Different Home Styles
    ============================== */
 
-.fixed-height { 
+.fixed-height {
 	position:relative;
-	height: 600px !important; 
+	height: 600px !important;
 }
 .fixed-height .logointro, .fixed-height .mouse {display: none;}
 .fixed-height .slide-content {height: 275px !important;}
@@ -718,7 +718,7 @@ p {
 		max-width: none;
 		top: 0;
 	}
-	
+
 	#owl-main .owl-prev {
 		width: 79px;
 		height: 79px;
@@ -757,7 +757,7 @@ p {
 		position: relative;
 		top:-230px;
 		z-index: 9999;
-	} 
+	}
 	#owl-main .owl-controls .owl-page span {
 		width: 14px;
 		height: 14px;
@@ -767,7 +767,7 @@ p {
 		border:2px solid #CDCDCD;
 	}
 		#owl-main .owl-controls .owl-page.active span, #owl-main .owl-controls.clickable .owl-page:hover span {
-			border-color:#EE2B45;	
+			border-color:#EE2B45;
 		}
 	#owl-main .owl-prev:hover,#owl-main .owl-next:hover {
 		opacity: 1;
@@ -1023,11 +1023,11 @@ h3.title.thin {
   background-color: #EE2B45;
   color: #fff;
 }
-		
+
 			.player.section .subtitle.mini {color:#fff;}
 			.YTPOverlay.raster {background: none !important;}
 			.player .overlay {z-index: 0;}
-		
+
 
 
 	.section.separator {
@@ -1103,7 +1103,7 @@ h3.title.thin {
 }
 
 #our-studio-presentation {
-		
+
 		padding-top: 5%;
 	}
 
@@ -1267,7 +1267,7 @@ h3.title.thin {
 		margin:0px 2px;
 	}
 		.carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {
-			border-color: #EE2B45;	
+			border-color: #EE2B45;
 		}
 
 		.testimonials.carousel-wrapper.with_pagination .owl-theme .owl-controls .owl-page span {background: #94262d; }
@@ -1352,7 +1352,7 @@ h3.title.thin {
 		position: relative;
 		text-align: center;
 		background: url('../images/gradient_team.jpg') repeat-x;
-		background-size:contain; 
+		background-size:contain;
 		overflow: hidden;
 	}
 		.team-wrapper .team-member img {
@@ -1367,7 +1367,7 @@ h3.title.thin {
 			width: 100%;
 			height: 100%;
 			opacity: 0;
-			
+
 		}
 			.team-wrapper .team-member:hover .hover {opacity: 1;}
 			.team-wrapper .team-member:hover .main {opacity: 0;}
@@ -1720,7 +1720,7 @@ h3.title.thin {
 		margin:  0 auto;
 		margin-top: 30px;
 		max-width: 200px;
-		
+
 	}
 	.project-info p {margin-bottom:15px; line-height: 32px;}
 	.project-info h6 {
@@ -1762,7 +1762,7 @@ h3.title.thin {
 	font-family: "Lato-Light";
 	font-weight:300;
 	border:1px solid #dadada;
-	background-color: transparent; 
+	background-color: transparent;
 	padding:12px 21px;
 	margin-right:20px;
 	border-radius:5px;
@@ -1873,14 +1873,14 @@ content: "";
 	margin-top: -60px;
 	position: relative;
 	overflow: hidden;
-	 -ms-transform: rotate(-6deg) !important; 
-    -webkit-transform: rotate(-6deg) !important; 
+	 -ms-transform: rotate(-6deg) !important;
+    -webkit-transform: rotate(-6deg) !important;
     transform: rotate(-6deg) !important;
 }
 
 #maps.normal {
-	 -ms-transform: rotate(0deg) !important; 
-    -webkit-transform: rotate(0deg) !important; 
+	 -ms-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
     transform: rotate(0deg) !important;
     margin-bottom: 0px;
 }
@@ -1889,8 +1889,8 @@ content: "";
 	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	 -ms-transform: rotate(6deg) !important; 
-    -webkit-transform: rotate(6deg) !important; 
+	 -ms-transform: rotate(6deg) !important;
+    -webkit-transform: rotate(6deg) !important;
     transform: rotate(6deg) !important;
 }
 
@@ -1899,8 +1899,8 @@ content: "";
 	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	 -ms-transform: rotate(0deg) !important; 
-    -webkit-transform: rotate(0deg) !important; 
+	 -ms-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
     transform: rotate(0deg) !important;
 }
 .inner-map {
@@ -2045,7 +2045,7 @@ content: "";
 }
 
 @media only screen and (max-width: 1180px) {
-  .facts .col-lg-2 { 
+  .facts .col-lg-2 {
     width: 100%;
   }
 }
@@ -2114,7 +2114,7 @@ float: right;}
   padding-left: 20px;
 }
 .blog-posts .col-lg-3:hover img {
- 
+
 }
 
 .blog-posts img {
@@ -2125,7 +2125,7 @@ float: right;}
   float: left;
   width: 85%;
   padding-right: 0px;
-  
+
 }
 .blog-posts .col-lg-3 div div {
   overflow: hidden;
@@ -2422,7 +2422,7 @@ img.blog-image-tiny {
 
 .responsive .responsive__content p{
 	line-height: 30px;
-	
+
 }
 .responsive .responsive__content p:nth-child(2) {
 	margin-bottom: 80px;
@@ -2522,7 +2522,7 @@ width: 100%;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: RGBA(253, 36, 64, 0.6); 
+	background-color: RGBA(253, 36, 64, 0.6);
 }
 
 
@@ -2582,7 +2582,7 @@ width: 100%;
 
 .we-are {
   background-color: #F5F5F5;
-  z-index: 14;  
+  z-index: 14;
   /*margin-top: -380px !important;*/
   margin-top: -150px !important;
    background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #F5F5F5 13%, #F5F5F5 87%, rgba(255, 255, 255, 0) 87%);
@@ -2970,7 +2970,7 @@ Carousel
 }
 .menu__item--social {
   text-transform: uppercase;
-  
+
   margin-bottom: 50px;
   font-size: 16px;
 }
@@ -3411,7 +3411,7 @@ img.mfp-img {
 			.team-wrapper .team-member .hover .social .icon.tw:hover {background-position: center -24px;}
 			.team-wrapper .team-member .hover .social .icon.di:hover {background-position: right -24px;}
 
-	
+
 
 
 
@@ -3442,7 +3442,7 @@ img.mfp-img {
    background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%);
   padding-top: 5vw;
   z-index: 99999999;
-	 
+
 
 }
 
@@ -3461,7 +3461,7 @@ img.mfp-img {
 	margin-top: -220px !important;
    background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%);
   z-index: 99999999;
-	 
+
 
 }
 
@@ -3482,7 +3482,7 @@ img.mfp-img {
 	.features h3 {
 		font-size: 27px;
 		font-family: "Raleway";
-		
+
 		font-weight: 200;
 		margin-bottom:15px;
 	}
@@ -3537,11 +3537,11 @@ img.mfp-img {
 	div#owl-project-single.owl-carousel.generic-carousel.owl-theme {
 		width: 75%;
 	}
-	
+
 
 }
 @media only screen and (max-width: 1600px) {
-	
+
 	#owl-studio img{
 		width: 120%;
 	}
@@ -3551,13 +3551,13 @@ img.mfp-img {
 }
 @media only screen and (min-width: 1700px) and (max-width: 2560px){
 	#our-studio-presentation {
-		
+
 		padding-top: 8%;
 	}
 }
 @media only screen and (min-width: 1500px) and (max-width: 1700px){
 	#our-studio-presentation {
-		
+
 		padding-top: 5%;
 	}
 }
@@ -3575,14 +3575,14 @@ img.mfp-img {
 	.voffset150 { margin-top: 105px; }
 	.voffset200 { margin-top: 140px; }
 	#our-studio-presentation {
-		
+
 		padding-top: 5%;
 	}
 
 }
 
 @media only screen and (max-width: 1350px) {
-	
+
 	#owl-studio img{
 		width: 130%;
 	}
@@ -3604,14 +3604,14 @@ img.mfp-img {
 }
 
 @media only screen and (min-width: 1150px) and (max-width: 1800px) {
-	
+
 	/*Previouslly 75%*/
 	.blog-posts img {
 	  width: 100%;
 	}
 }
 /* Note: Design for a width of 1024px */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 	.container {width: 100%;}
 	.section .full-width {width: 100%;}
 	.voffset10  { margin-top: 5px; }
@@ -3669,7 +3669,7 @@ img.mfp-img {
   #maps {
 		width: 800%;
 height: 350px;
-margin-bottom: 50px;	
+margin-bottom: 50px;
 	}
 
 	#features {
@@ -3684,7 +3684,7 @@ margin-bottom: 50px;
 		padding-top: 0px !important;
 		margin-top: 0px !important;
 	}
-	
+
 
 	.prev1 {
 		left: 5px;
@@ -3767,7 +3767,7 @@ margin-bottom: 50px;
 		padding-bottom:14px;
 	}
 	.section .full-width {width: 100%;}
-	.voffset10, 
+	.voffset10,
 	.voffset20,
 	.voffset30,
 	.voffset40,
@@ -3790,7 +3790,7 @@ margin-bottom: 50px;
 	.we-are h4 {
 		font-size: 18px;
 	}
-	
+
 	#contact form {
 		margin-top: 0px;
 	}
@@ -3798,11 +3798,11 @@ margin-bottom: 50px;
 		margin-top: 50px;
 	}
 	.section .title.mini {
-		font-size: 15px; 
+		font-size: 15px;
 		line-height: 17px;
 		padding:0px;
 	}
-	.carousel-wrapper.full .generic-carousel .owl-item .ulitem li { 
+	.carousel-wrapper.full .generic-carousel .owl-item .ulitem li {
 		padding-left:3%;
 		width: 50%;
 	}
@@ -3945,7 +3945,7 @@ margin-bottom: 50px;
   	.features__content {
   		margin-bottom: 30px;
   	}
-  	
+
 }
 /* Note: Design for a width of 768px */
 @media only screen and (max-width : 768px) {
@@ -3985,7 +3985,7 @@ margin-bottom: 50px;
 	#header .menu-item a {
 		color: #ffffff;
 	}
-	
+
 
 	.we-are {
 		padding: 200px 0px 180px;
@@ -4005,7 +4005,7 @@ margin-bottom: 50px;
 	.team-wrapper .team-member {width: 50%;}
 	.team-wrapper {margin-top:0px;}
 	.folio-filter.container {padding-top:0px;}
-	
+
 	.clients-list {margin-top:0px;}
 	.section .title.medium {font-size:20px;}
 	.separator {margin-bottom:-80px;}
@@ -4017,7 +4017,7 @@ margin-bottom: 50px;
 
 /* Note: Design for a width of 320px */
 @media only screen and (max-width : 568px) {
-	
+
 	#header {top:15px;}
 	#owl-main .owl-pagination {
 		top:-85px;
@@ -4060,13 +4060,13 @@ margin-bottom: 50px;
 	.container {width: 95%;}
 	.section .full-width {width: 100%;}
 	#maps {position: relative;}
-	
+
 	.carousel-wrapper.full .generic-carousel .owl-item .ulitem li, .clients-list li {width: 100%;}
 	#owl-main-text h2 {font-size: 20px;}
 	.slide-content p {font-size: 12px;}
-	
+
 	#owl-main-text {height: 120px;}
-	
+
 	.section .go-btn {
 		margin: 20px auto -25px auto;
 	}
@@ -4110,7 +4110,7 @@ margin-bottom: 50px;
 	.address-title {margin-top:10px;}
 	.testimonials.carousel-wrapper {background-size: contain;}
 	.section .title.medium {
-		margin-top:0px; 
+		margin-top:0px;
 		font-size: 18px;
 		margin-bottom:50px;
 	}
@@ -4188,14 +4188,14 @@ margin-bottom: 50px;
 	#footer .social li .icon {margin:0px 5px;}
 	#footer .social {margin:0px -40px;}
 	.subtitle.mini.darker {color:#888;}
-	#our-story .carousel-wrapper.with_buttons .owl-controls .owl-buttons div {top:50%;}	
+	#our-story .carousel-wrapper.with_buttons .owl-controls .owl-buttons div {top:50%;}
 	.team-wrapper .team-member .hover .name {font-size: 16px;}
 	.team-wrapper .team-member .hover .position {font-size: 12px;}
 	.carousel-wrapper.full .generic-carousel .owl-item .ulitem li h3 {margin-top:0px;}
 	.modal-form .close {display: block;}
 
 }/*and (orientation : landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape){ 
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape){
 	#header.overflow.fixed, #header {z-index:99999; position: absolute;}
 	#owl-main .owl-pagination {top: -25px;}
 	#owl-main-text {
@@ -4221,7 +4221,7 @@ margin-bottom: 50px;
 	.voffset10, .voffset20, .voffset30, .voffset40, .voffset50, .voffset60, .voffset70, .voffset80, .voffset90, .voffset100, .voffset150 {margin-top:25px;}
 	.features li {margin-bottom: 12px;}
 	.features h3 {margin-bottom:5px;}
-} 
+}
 
 @media only screen and (max-height : 1024px) {
 	.logointro img {
@@ -4236,11 +4236,11 @@ margin-bottom: 50px;
 	.slide-subtitle {
 		bottom: -50px !important;
 	}
-} 
+}
 
 /* iPhone 6 plus in landscape */
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
 
 	#header a img {
 		width: 75px !important;
@@ -4259,7 +4259,7 @@ margin-bottom: 50px;
 }
 
 /*iPhone 6 landscape*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {
     #header a img {
 		width: 75px !important;
 	}
@@ -4310,7 +4310,7 @@ margin-bottom: 50px;
 
 /* iPhone 6 and 6+ media queries*/
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px)
-{ 
+{
 	.slide-content {
 		height: 350px;
 	}
@@ -4444,7 +4444,7 @@ margin-bottom: 50px;
 	.slide-subtitle {
 		bottom: -60px;
 		font-weight: normal;
-		
+
 	}
 	.slide-subtitle p {
 		font-size: 14px;
@@ -4485,7 +4485,7 @@ margin-bottom: 50px;
 
 /*iPhone 5/5s*/
 
- @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+ @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
 	.slide-content {
 		height: 300px;
@@ -4526,7 +4526,7 @@ margin-bottom: 50px;
 		margin-bottom: 75px;
 	}
 
-	
+
 }
 
 /* iPhone 4/4s */
@@ -4542,7 +4542,7 @@ margin-bottom: 50px;
 	}
 
 	.project-info .btn {
-		
+
 		font-size: 12px;
 	}
 	.section .title {
@@ -4579,7 +4579,7 @@ margin-bottom: 50px;
 		margin-bottom: 75px;
 	}
 
-	
+
 }
 
 
@@ -4618,7 +4618,7 @@ margin-bottom: 50px;
 	}
 
 	.inner-map {
-		margin-top:150px; 
+		margin-top:150px;
 margin-left: -2600px;
 	}
 
@@ -4653,7 +4653,7 @@ margin-left: -2600px;
 	.blog-posts .content p{
 		margin-left: 0px;
 
-	} 
+	}
 
 
 	.blog .blog-posts .content h2 {
@@ -4668,7 +4668,7 @@ margin-left: -2600px;
 	}
 	#maps {
 		margin-top: -100px;
-	}	
+	}
 
 	.video {
 		  padding:28vw 0px 0vw;
@@ -4687,7 +4687,7 @@ margin-left: -2600px;
 		padding: 250px 0px 180px;
 		margin-bottom: -150px !important;
 	}
-	
+
 	.contact .supertitle span {
 		margin-bottom: 100px;
 	}
@@ -4711,8 +4711,8 @@ margin-left: -2600px;
 
 
 /* iPad */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
-	
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
 	#home-slider.tiny {
 
 		height: 600px !important;
@@ -4793,7 +4793,7 @@ margin-left: -2600px;
 	.blog-posts .content p{
 		margin-left: 0px;
 
-	} 
+	}
 
 
 	.blog .blog-posts .content h2 {
@@ -4825,7 +4825,7 @@ margin-left: -2600px;
 	.about-us .about-us__content p {
 		line-height: 24px;
 	}
-	
+
 	.video h3 {
 		font-size: 20px;
 	}
@@ -5059,7 +5059,7 @@ margin-left: -2600px;
 	fill: #fff;
 }
 .no-cssanimations .ip-header {
-	display: none;	
+	display: none;
 }
 .no-cssanimations #owl-main img {position: relative;}
 /* Media queries */
