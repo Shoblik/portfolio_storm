@@ -1,0 +1,51 @@
+/*********** Landing Page *************/
+
+#home-slider {
+    background-image: url('../images/chicago.jpg');
+    background-size: 103%;
+    text-align: center;
+}
+#nav  {
+    color: white !important;
+}
+.landingTitle {
+    position: absolute;
+    left: 50vw;
+    top: 17vh;
+    /*display: inline-block;*/
+    transform: translateX(-50%);
+    font-size: 6vw;
+    color: white;
+}
+.backgroundFilter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, .5);
+}
+
+/*phone screen size*/
+@media (min-width: 300px) and (max-width: 800px) {
+    #home-slider {
+        background-image: url('../images/chicago.jpg');
+        background-size: 403%;
+        text-align: center;
+        background-position: center;
+    }
+    .landingTitle {
+        top: 36vh;
+        font-size: 3rem;
+        width: 100%;
+    }
+}
+/*Desktop and large screens*/
+@media (min-width:1800px) {
+    .landingTitle {
+        position: absolute;
+        left: 50vw;
+        top: 36vh;
+        /* display: inline-block; */
+        transform: translateX(-50%);
+        font-size: 6vw;
+        color: white;
+    }
+}

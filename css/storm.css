@@ -416,7 +416,7 @@ font-weight: normal;
 	#header.overflow {
 		top:-100px;
 		left: 0px;
-		background-color: RGBA(238, 43, 69, 0.9) !important;
+		background-color: RGBA(255, 40, 0, 0.9) !important;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.11);
 		-webkit-transition: all 0.3s ease-in;
 		-o-transition: all 0.3s ease-in;
@@ -483,13 +483,13 @@ font-weight: normal;
 		font-size: 30px;
 		line-height: 30px;
 		padding: 0px;
-		color:#000000;
+		color: white;
 	}
 	#header.overflow.fixed .navbar-toggle {
 		color:#000;
 	}
 	#header .menu-item a {
-		color:#000000;
+		color: white;
 		text-transform: lowercase;
 		font-size: 15px;
 		line-height: 6px;
@@ -643,7 +643,6 @@ font-weight: normal;
 .color-picker .picker-ocre{background: #BBA965;}
 .color-picker .picker-red{background: #EE2B45;}
 .color-picker .picker-violet:hover,.color-picker .picker-blue:hover,.color-picker .picker-green:hover,.color-picker .picker-yellow:hover,.color-picker .picker-red:hover,.color-picker .picker-black:hover,.color-picker .picker-ocre:hover,.color-picker .picker-orange:hover{border-color: #000;}
-
 
 
 
@@ -826,7 +825,7 @@ font-weight: normal;
 		#owl-main-text h2 {
 			font-size: 55px;
 			text-align: center;
-			color: #000000;
+			color: white;
 			font-weight: 600;
 			text-transform: uppercase;
 			font-weight: 600;
@@ -838,7 +837,7 @@ font-weight: normal;
 
 		.slide-subtitle p {
 			font-size: 20px;
-			color: #000000;
+			color: white;
 			text-align: center;
 			font-family: "Gotham-Medium";
 			position: relative;
@@ -1493,7 +1492,7 @@ h3.title.thin {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: RGBA(238, 43, 69, 0.9);
+  background-color: RGBA(255, 40, 0, 0.9);
   visibility: visible;
   opacity: 0;
 }
@@ -1602,7 +1601,7 @@ h3.title.thin {
 		top: 3%;
 		left: 2%;
 		right: 0px;
-		background: RGBA(238, 43, 69, 0.9);
+		background: RGBA(255, 40, 0, 0.9);
 		opacity: 0;
 		visibility: hidden;
 	}
@@ -5066,7 +5065,7 @@ margin-left: -2600px;
 	}
 
 	.box {
-		width: 100%%;
+		width: 100%;
 	}
 
 }
@@ -5168,7 +5167,7 @@ nav ul{
 .customNavigation{
   text-align: center;
 }
-//use styles below to disable ugly selection
+/*//use styles below to disable ugly selection*/
 .customNavigation a{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -5185,11 +5184,11 @@ nav ul{
 
 .customNavigation a.prev {
 	position: absolute !important;
-	left: 40 !important;
+	left: 40px !important;
 }
 
 .customNavigation a.next {
 	position: absolute !important;
-	right: 40 !important;
+	right: 40px !important;
 }
 
