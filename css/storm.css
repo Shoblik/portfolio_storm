@@ -1094,7 +1094,7 @@ h3.title.thin {
 
 #our-studio-presentation {
 
-	padding-top: 4%;
+	padding-top: 5%;
 }
 
 
@@ -3548,7 +3548,7 @@ img.mfp-img {
 @media only screen and (min-width: 1500px) and (max-width: 1700px){
 	#our-studio-presentation {
 
-		padding-top: 5%;
+		padding-top: 4%;
 	}
 }
 @media only screen and (max-width: 1500px) {
@@ -3566,7 +3566,7 @@ img.mfp-img {
 	.voffset200 { margin-top: 140px; }
 	#our-studio-presentation {
 
-		padding-top: 5%;
+		padding-top: 4%;
 	}
 
 }
