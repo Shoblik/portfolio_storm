@@ -49,3 +49,54 @@
         color: white;
     }
 }
+/*Icons*/
+.icon {
+    background: no-repeat center;
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    /*border: 1px solid black;*/
+    background-color: lightblue;
+    border-radius: 20%;
+    background-size: 80%;
+}
+
+.apache {
+    background-image: url('../developer_icons/apache_icon.svg');
+}
+.aws {
+    background-image: url('../developer_icons/aws_icon.svg');
+}
+.javascript {
+    background-image: url('../developer_icons/javascript_icon.svg');
+    background-size: 100%;
+    border: none;
+}
+.bootstrap {
+    background-image: url('../developer_icons/bootstrap.svg');
+}
+.jquery {
+    background-image: url('../developer_icons/jquery_icon.svg');
+}
+.css {
+    background-image: url('../developer_icons/css_icon.svg');
+}
+.html {
+    background-image: url('../developer_icons/html_icon.svg');
+}
+.php {
+    background-image: url('../developer_icons/php_icon.svg');
+}
+.python {
+    background-image: url('../developer_icons/python_icon.svg');
+}
+.mysql {
+    background-image: url('../developer_icons/mysql_icon.svg');
+}
+.node {
+    background-image: url('../developer_icons/node_js_icon.svg');
+}
+.jetBrains {
+    background-image: url('../developer_icons/jet_brains_icon.svg');
+}
+.

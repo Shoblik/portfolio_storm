@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['email'])){
-		$mailTo = "epic@jellythemes.com";
+		$mailTo = "shoblik@yahoo.com";
 		$subject = "mail from web";
 		$body = "New message from web
 <br><br>
