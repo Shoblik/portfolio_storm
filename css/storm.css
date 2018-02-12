@@ -4219,14 +4219,18 @@ img.mfp-img {
 		margin-top: 100px;
 		width: auto;
 	}
-	#owl-main-text {margin-top:-350px !important;}
+	#owl-main-text {margin-top:-585px !important;}
 	.slide-content {
 		bottom: -265px !important;
 	}
 	.slide-subtitle {
-		bottom: -50px !important;
+		bottom: 111px;
+	}
+	.landingTitle {
+		top: 11vh;
 	}
 }
+
 
 /* iPhone 6 plus in landscape */
 
