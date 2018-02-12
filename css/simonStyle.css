@@ -37,6 +37,11 @@
     width: 100%;
     background-color: rgba(0,0,0, .5);
 }
+.projectItem.particleGeneratorDemo {
+    background-image: url('../images/particle_generator_demo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 /*phone screen size*/
 @media (min-width: 300px) and (max-width: 800px) {
