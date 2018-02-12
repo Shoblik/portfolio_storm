@@ -37,12 +37,25 @@
     width: 100%;
     background-color: rgba(0,0,0, .5);
 }
+.projectItem.particleGeneratorDemo, .projectItem.memoryMatchDemo, .projectItem.tacoAppDemo, .projectItem.petVetDemo, .projectItem.guessDemo {
+    background-repeat: no-repeat;
+    background-size: 101%;
+}
 .projectItem.particleGeneratorDemo {
     background-image: url('../images/particle_generator_demo.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
-
+.projectItem.memoryMatchDemo {
+    background-image: url('../images/memory_match_demo.png');
+}
+.projectItem.tacoAppDemo {
+    background-image: url('../images/taco_app_demo.png');
+}
+.projectItem.petVetDemo {
+    background-image: url('../images/petvet_demo.png');
+}
+.projectItem.guessDemo {
+    background-image: url("../images/guess_demo.png");
+}
 /*phone screen size*/
 @media (min-width: 300px) and (max-width: 800px) {
     #home-slider {
