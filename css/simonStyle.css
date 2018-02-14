@@ -94,7 +94,7 @@
 and (min-width : 1224px)
 and (max-width: 1500px){
     .landingTitle {
-        top: 22vh;
+        top: 19vh;
     }
     .slide-subtitle {
         bottom: -87px !important;
