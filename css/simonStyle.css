@@ -67,7 +67,7 @@
         background-size: 450%;
     }
     .landingTitle {
-        top: 35vh;
+        top: 30vh !important;
         font-size: 2.5rem;
         width: 100%;
     }
