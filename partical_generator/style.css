@@ -1,0 +1,295 @@
+body {
+
+    overflow: hidden;
+    background-color: black;
+
+}
+.selected {
+    color: green !important;
+    visiblity: visible;
+}
+.circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: 4s;
+}
+.instructions {
+    text-align: center;
+    animation: fadein 1s;
+    color: white;
+    background-color: rgba(0,0,0, .7);
+}
+.instructionsContainer {
+    z-index: 1001;
+    position: relative;
+    width: 85%;
+    margin: auto;
+}
+.typewrite {
+    color: white;
+}
+.highlight {
+    background-color: red !important;
+    transition: 2s;
+}
+.rocket {
+    position: absolute;
+    /*border: solid 2px black;*/
+    height: 0%;
+    width: 20%;
+    transform: rotateZ(-90deg) translate(70%,-85%);
+    z-index: 10;
+}
+.rocket img {
+    width: 60%;
+    height: auto;
+    transform: translate(-40%, -150%);
+    z-index: 10;
+    visibility: hidden;
+}
+#contentWrapper {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+#contentWrapper {
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    bottom: 0;
+}
+.navbar {
+    z-index: 20;
+    width: 100%;
+    color: white;
+}
+input {
+    color: black;
+}
+#ballSizePx {
+    display: inline-block;
+    width: 28%;
+    position: relative;
+    left: 5%;
+}
+#transitionTime {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    left: 5%;
+}
+#randomSizeCheckbox {
+    position: relative;
+    left: 10%;
+    margin: 0;
+    top: 50%;
+}
+#transitionDelayInput, #randomTransitionTime, #linearTransitionCheckbox{
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    left: 5%;
+}
+#randomTransitionTime {
+    left: 2%;
+}
+#randomResizeCheckbox {
+    margin-left: 8%;
+}
+#randomResizeInput {
+    width: 25%;
+    margin-left: 10%;
+}
+
+.colorSelectionDiv {
+    height: 100vh;
+    width: 240px;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: .2s;
+    position: absolute;
+    z-index: 10002;
+    text-align: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.historyDiv {
+    height: 100vh;
+    width: 245px;
+    background-color: black;
+    transition: .3s;
+    position: absolute;
+    z-index: 10001;
+    text-align: center;
+    margin: auto;
+    border: 1px solid grey;
+    transform: translateX(-100%);
+}
+.showHistoryDiv {
+    transform: translateX(98%);
+    overflow-y: auto;
+}
+.historyTitle {
+    color: white;
+}
+.saveSelection {
+    padding: 4px;
+}
+.selectionNameDivContainer {
+    width: 100%;
+}
+.selectionTitle {
+    margin: 0;
+    position: relative;
+    padding: 15px;
+    font-size: 125%;
+    pointer-events: none;
+}
+.selectionDiv {
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    color: white;
+    cursor: pointer;
+}
+.historyInstructions {
+    margin: 0 5px 10px;
+}
+.showColorSelection {
+    transform: none;
+}
+.addColor {
+    color: blue;
+    margin: 10px 0 0 5px;
+}
+.addColor:hover {
+    cursor: pointer;
+}
+.newColorInput {
+    margin-top: 10px;
+}
+.colorSelectionTitle {
+    margin-top: 12px;
+    color: white;
+}
+.colorDiv:first-of-type {
+    margin-top: 10px;
+}
+.randomColorBtn {
+    margin: 10px auto;
+}
+.colorDiv {
+    width: 100%;
+    border: 1px solid white;
+    height: 40px;
+}
+.colorDeleteBtn {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40%;
+    border-radius: 50%;
+    font-size: 15px;
+    color: white;
+}
+span:hover {
+    cursor: pointer;
+}
+button:focus, input:focus {
+    outline: none !important;
+}
+button:hover {
+    background-color: black !important;
+}
+button {
+    transition: .3s !important;
+}
+
+
+/**********************************************************/
+/**/
+.navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+div#myNavbar {
+    transition: .2s !important;
+}
+button.cursor {
+    margin-right: 5px;
+}
+.hideCursor {
+    cursor: none;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+    transition: .5s !important;
+}
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+.navbar-nav {
+    float: none!important;
+}
+.navbar-nav>li {
+    float: none;
+    position: relative;
+    display: block;
+    padding: 2px;
+    background-color: rgba(0,0,0, .9);
+}
+.navbar-inverse {
+    width: 280px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    left: 100%;
+    transform: translate(-100%);
+}
+input#transDirection {
+    margin-left: 5px;
+}
+.openAll {
+    color: white;
+    position: absolute;
+    text-decoration: underline;
+    left: 100%;
+    width: 55px;
+    top: 15px;
+    transform: translateX(-130px);
+    display: inline-block;
+    position: fixed;
+    z-index: 2000;
+}
+.openAll:hover {
+    cursor: pointer;
+}
+.btnContainer {
+    text-align: left;
+}
+.splatterInput {
+    width: 20%;
+    margin-left: 4px;
+}
+.linkedIn, .githubBtn {
+    margin: 0 5px;
+}
+input.multiplierInput {
+    width: 20%;
+    margin-left: 5px;
+}
+/*///////////////////////////////////*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+

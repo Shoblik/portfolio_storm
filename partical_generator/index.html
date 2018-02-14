@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burst</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+<div class="colorSelectionDiv">
+    <h3 class="colorSelectionTitle">Color Selection</h3>
+    <input class="newColorInput" type="text" placeholder="color name or r,g,b"><span class="addColor glyphicon glyphicon-plus"></span>
+    <button class="randomColorBtn btn btn-danger">Random Color: On</button>
+    <button class="saveBtn btn btn-primary">History</button>
+</div>
+<div class="historyDiv">
+    <h3 class="historyTitle">History</h3>
+    <h5 class="historyInstructions">To save the current color selection give it a name and press save</h5>
+    <input type="text" class="selectionName" placeholder="Selection Name"> <button class="saveSelection btn btn-success">Save</button>
+    <div class="selectionNameContainer"></div>
+</div>
+<p class='openAll'>open all</p>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active multiplierContainer selected">Particle Multiplier <input class="multiplierInput" type="number" placeholder="1"></li>
+                <li class="active splatterMultiplierContainer selected">Splatter Multiplier <input class="splatterInput" type="number" placeholder="50"></li>
+                <li class="active customColorBtnContainer"><button class="customColorBtn btn btn-warning">Custom Particle Color</button></li>
+                <li class="active ballSize">Max Ball Size <input id="ballSizePx" type="number" placeholder="px"></li>
+                <li class="active transTime">Transition Time <input id="transitionTime" type="number" placeholder="s"></li>
+                <li class="active transDirection selected">Random Transition Direction <input id="transDirection" type="checkbox" checked></li>
+                <li class="active randomTransTime selected">Random Trans Time<input id="randomTransitionTime" type="checkbox" checked></li>
+                <li class="active randomSize selected">Random Size<input id='randomSizeCheckbox' type="checkbox" checked></li>
+                <li class="active transDelay">Transition delay<input type="number" id="transitionDelayInput" placeholder="s"></li>
+                <li class="active linearTransition selected">Non-Linear Transition<input type="checkbox" id="linearTransitionCheckbox" checked></li>
+                <li class="active randomResize" class = 'randomResizeTrans'>random resize<input type="checkbox" id="randomResizeCheckbox"><input type="number" placeholder="px" id="randomResizeInput"></li>
+                <li class="active colorInputContainer">Custom Background Color<input type="text" class="customizeBackground" placeholder="color name or r,g,b"></li>
+                <li class="active resetContainer"><button class='cursor btn btn-warning'>Hide Cursor</button><button class="resetBtn btn btn-danger">Reset</button></li>
+                <li class="btnContainer"><button class="webPortfolio btn btn-primary">Web Portfolio</button></li>
+                <li class="btnContainer"><button class="github btn btn-primary">Github</button><button class="linkedIn btn btn-primary">LinkedIn</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="contentWrapper">
+<div class="rocket"><img src="images/white_ship_outline.png"></div>
+
+    <div class="instructionsContainer">
+        <h1 class="instructions fadein">Welcome to my Particle Generator</h1>
+    </div>
+
+    <!--<h1 class="instructions">-->
+        <!--<a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to my particle generator", "check out the settings menu ->", "Play around and create", "Check out my Github and Web Portfolio" ]'>-->
+            <!--<span class="wrap"></span>-->
+        <!--</a>-->
+    <!--</h1>-->
+</div>
+</body>
+</html>
