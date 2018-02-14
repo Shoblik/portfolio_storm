@@ -2809,6 +2809,7 @@ label.error {display: none !important;}
 	text-transform: uppercase;
 	position: relative;
 	letter-spacing: 3px;
+	margin-bottom: 20px;
 }
 .go-to-top:before {
 	content: '';

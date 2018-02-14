@@ -57,6 +57,9 @@
 .projectItem.guessDemo {
     background-image: url("../images/guess_demo.png");
 }
+.col-md-12.jt_row.jt_row-fluid.jt_col.column_container.getRidOfPadding.visible {
+    padding: 0;
+}
 /*phone screen size*/
 @media (min-width: 300px) and (max-width: 800px) {
     #home-slider {
