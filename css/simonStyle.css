@@ -71,6 +71,10 @@
         font-size: 2.5rem;
         width: 100%;
     }
+    .icon {
+        height: 90px;
+        width: 90px;
+    }
 }
 
 /*phone screen size*/
