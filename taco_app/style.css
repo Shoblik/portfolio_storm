@@ -1,0 +1,486 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+button:hover,
+a:hover,
+p.recipeLinks:hover {
+  cursor: pointer;
+}
+input:focus,
+button:focus,
+p:focus {
+  outline: none;
+}
+input#zipcodeSearch,
+input#searchRadiusInput {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.sfxBtn {
+  width: 10%;
+  /* height: 10%; */
+  z-index: 100;
+  position: relative;
+  bottom: 39%;
+  left: 34%;
+  text-align: center;
+  color: #613f19;
+  /* border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: bolder; */
+}
+/******** modal container styling *******/
+
+.container,
+.recipeModalContainer,
+.searchModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+  max-width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+/* #homeSplash {
+  z-index: 100;
+  background-color: pink;
+} */
+
+/* #homeImg > img {
+  width: 100%;
+  height: 100%;
+} */
+
+.recipeModalContainer {
+  top: -250%;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.searchModalContainer {
+  top: -250%;
+  transition: 1s;
+}
+
+.homeContainer,
+.recipeModalFront,
+.recipeModalBack,
+.searchModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background-color: rgb(252, 221, 164);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px black;
+}
+
+.recipeModalBack {
+  transform: rotateY(180deg) translate(-50%, -50%);
+  transform-origin: left;
+  display: none;
+}
+
+.homeContainer {
+  justify-content: center;
+}
+
+.homeContainer > button {
+  position: relative;
+  display: block;
+  height: 20vh;
+  width: 90%;
+  margin-bottom: 20px;
+  font-size: 5vh;
+  top: 3vh;
+  color: white;
+  border-radius: 30px;
+}
+
+/************** modal content styling *************/
+
+.homeContainer > button:focus {
+  outline: none;
+}
+
+.homeContainer > :nth-child(-n + 2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(140deg, #ffffff, rgb(252, 221, 164));
+  width: 90%;
+  height: 30%;
+  border-radius: 30px;
+}
+
+.homeContainer > :nth-child(2) {
+  background: linear-gradient(140deg, #ffafbd, #c9ffbf);
+
+  margin-top: 3vh;
+  width: 90%;
+  height: 10%;
+}
+/* #header{
+  display: block;
+} */
+.homeContainer > div > h1 {
+  margin: auto auto;
+  font-size: 6vmin;
+  color: #aa6c2b;
+  font-family: "Syncopate", sans-serif;
+}
+.homeContainer > div > img {
+  margin-top: 10%;
+  width: 50%;
+}
+
+.recipeNameFront,
+.recipeNameBack {
+  color: #58260e;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipeNameFront h2,
+.recipeNameBack h2 {
+  margin: 0;
+  padding: 15px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.recipeImage {
+  margin-top: 10%;
+  height: 25%;
+}
+
+.recipeImage img {
+  border: 4px solid #58260e;
+  border-radius: 4px;
+}
+
+.recipeLinks {
+  display: block;
+  margin: 0;
+  font-size: 1.4rem;
+  color: purple;
+  text-decoration: underline;
+}
+
+.recipeLinks:hover {
+  color: #c100c1;
+  cursor: default;
+}
+
+.recipeTextFront,
+.recipeTextBack {
+  overflow-y: scroll;
+  width: 95%;
+  padding: 15px;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.recipeTextFront {
+  height: 52%;
+  margin: 10px;
+}
+
+.recipeTextBack {
+  height: 70%;
+}
+
+.modalButton {
+  position: absolute;
+  bottom: 1%;
+  width: 47%;
+  height: 12%;
+  font-size: 5vmin;
+  border-radius: 25px;
+  border: 3px solid;
+}
+
+.searchModalReturn,
+.recipeModalReturn,
+.recipeModalFrontHome {
+  left: 2%;
+  background-color: #ee6c4b;
+  border-color: #ff2627 #a30000 #a30000 #ff2627;
+}
+
+.makeBtn {
+  border: 6px solid;
+  background-color: #ee6c4b;
+  border-color: #ff2627 #a30000 #a30000 #ff2627;
+}
+
+.searchModalReturn {
+  width: 96%;
+}
+
+.searchModalReturn:active,
+.makeBtn:active,
+.recipeModalFrontHome:active,
+.recipeModalReturn:active {
+  border-color: #a30000 #ff2627 #ff2627 #a30000;
+}
+
+.searchModalReturn:hover,
+.makeBtn:hover,
+.recipeModalFrontHome:hover,
+.recipeModalReturn:hover {
+  background-color: #c36343;
+}
+
+.recipeModalGetNew,
+.recipeModalBackHome {
+  right: 2%;
+  background-color: #84c94b;
+  border-color: #00a400 #007500 #007500 #00a400;
+}
+
+.findBtn {
+  border: 6px solid;
+  background-color: #84c94b;
+  border-color: #00a400 #007500 #007500 #00a400;
+}
+
+.recipeModalGetNew:active,
+.findBtn:active,
+.recipeModalBackHome:active {
+  border-color: #007500 #00a400 #00a400 #007500;
+}
+
+.recipeModalGetNew:hover,
+.findBtn:hover,
+.recipeModalBackHome:hover {
+  background-color: #67ab4a;
+}
+
+.modalButton:focus,
+.makeBtn,
+.findBtn {
+  outline: none;
+}
+
+.searchName {
+  margin-top: 3vh;
+}
+
+/*********** map related styling  **********/
+
+.mapContainer {
+  margin-top: 2vh;
+  height: 30%;
+  width: 90%;
+  border-radius: 30px;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+.placesList {
+  width: 90%;
+  height: 40%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 1vh;
+}
+
+.listContainer {
+  width: 100%;
+}
+.listItem {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px dotted black;
+}
+
+.imgContainer {
+  float: left;
+  height: 90px;
+  width: 100px;
+}
+.imgContainer > img {
+  height: 100%;
+  width: 100px;
+  margin: 5px;
+}
+
+.image {
+  margin-bottom: 0;
+}
+.name {
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.phoneNumber,
+.rating,
+.open,
+.closed,
+.infoBtn {
+  padding: 5px;
+  display: inline-block;
+}
+.open {
+  color: green;
+}
+
+.closed {
+  color: red;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 27%;
+  top: 15%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+.loader > img {
+  width: 100%;
+  height: 100%;
+}
+.loader > :nth-child(2) {
+  width: 50px;
+  height: 50px;
+  margin: 4vh 5vh;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.placesList > .loader {
+  top: 60%;
+}
+
+.inputContainer {
+  text-align: center;
+  margin-top: 1vh;
+  width: 90%;
+}
+
+#zipcodeSearch,
+#searchRadiusInput {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 6px;
+}
+
+#searchRadiusInput {
+  left: 77%;
+  width: 25%;
+}
+.zipcodeBtn {
+  margin-left: 1vh;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  width: 17%;
+  padding: 7px;
+}
+.makeMeSmaller {
+  font-size: 0.8rem;
+}
+
+.movingLogo {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*********** loading screen related styling  **********/
+
+/************** ANIMATIONS ************/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/************** MEDIA QUERIES ************/
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 4vmin;
+  }
+
+  .homeContainer > div > h1 {
+    font-size: 8vmin;
+  }
+
+  .recipeNameFront h2,
+  .recipeNameBack h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .homeContainer > div > h1 {
+    font-size: 2rem;
+  }
+
+  .recipeNameFront h2,
+  .recipeNameBack h2 {
+    font-size: 1.5rem;
+  }
+}

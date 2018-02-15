@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <base target="_blank">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate|Titillium+Web|Comfortaa" rel="stylesheet">   
+    <script src="main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Taco'bout It</title>
+</head>
+
+<body>
+    <!-- <div class="container" id="homeSplash">
+        <h2>click taco to continue</h2>
+        <div id="homeImg">
+            <img src="images/meal_with_it.gif" alt="">
+        </div>
+        
+    </div> -->
+    <div class="container">
+        <div class="sfxBtn"><i class="fas fa-volume-up"></i></div>
+        <div class="homeContainer">
+            <div id="header">
+                <!-- <img src="images/taco_cat_hp.gif" alt="taco cat homepage logo"> -->
+                <h1>TACO'BOUT IT</h1>
+            </div>
+            <div id="tacoTuesday"></div>
+            <button class="makeBtn">Make Some!</button>
+            <button class="findBtn">Find Some!</button>
+        </div>
+    </div>
+    <div class="recipeModalContainer">
+        <div class="recipeModalBack">
+            <div class="recipeNameBack">
+                <h2></h2>
+            </div>
+            <div class="recipeTextBack"></div>
+            <button class="modalButton recipeModalReturn">Return</button>
+            <button class="modalButton recipeModalBackHome">Home Page</button>
+        </div>
+        <div class="recipeModalFront">
+            <div class="recipeImage">
+                <img src="http://2.bp.blogspot.com/-DuBYMKQYAyE/Uxh5uTFhYYI/AAAAAAAAfcM/LPpUi4CjY-4/s800/Chorizo+and+Sweet+Potato+Tacos+with+Apple+and+Pomegranate+Salsa+800+9809.jpg"
+                    alt="image of taco from recipe" width="auto" height="100%">
+            </div>
+            <div class="recipeTextFront">
+                <h2></h2>
+                <p></p>
+            </div>
+            <button class="modalButton recipeModalFrontHome">Home</button>
+            <button class="modalButton recipeModalGetNew">Get New Taco</button>
+        </div>
+    </div>
+
+    <div class="searchModalContainer">
+        <div class="searchModal">
+            <div class="searchName">
+                <h2>Tacos Near You</h2>
+            </div>
+            <div class="mapContainer">
+                <div class="loader">
+                    <img src="images/taco_cat.gif" alt="">
+                    <img src="images/taco_load.png" alt="">
+                </div>
+                <div id="map" draggable="true"></div>
+            </div>
+            <div class="inputContainer">
+                <input id="zipcodeSearch" type="number" placeholder="search by zipcode">
+
+                <input id="searchRadiusInput" type="number" placeholder="1.5 miles">
+                <button class="zipcodeBtn">Go</button>
+
+            </div>
+            <div class="placesList">
+                <div class="loader">
+                    <img src="images/taco_cat.gif" alt="">
+                    <img src="images/taco_load.png" alt="">
+
+                </div>
+            </div>
+
+            <button class="modalButton searchModalReturn">Home</button>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-9zxeNdRlMgwNUuz7cG9d0kl73hKFQW0&libraries=places" async
+        defer></script>
+</body>
+
+</html>
