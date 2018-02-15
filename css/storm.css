@@ -884,7 +884,7 @@ a.navbar-brand.mini {
 	line-height: 20px;
 }
 .btn:hover {
-	border-color: #EE2B45;
+	color: #FF0E44;
 	background-color: transparent;
 	color: #000;
 }
@@ -984,9 +984,9 @@ h3.title.thin {
 	font-family: "Gotham-Medium";
 }
 .btn {
-	background-color: #EE2B45;
+	background-color: white;
 	padding: 10px 30px;
-	color: #fff;
+	color: black;
 	font-size: 14px;
 	display: inline-block;
 	text-transform: uppercase;
@@ -1003,9 +1003,9 @@ h3.title.thin {
 	transition: 0.5s all ease;
 }
 .btn:hover {
-	border-color: #EE2B45;
-	background-color: transparent;
-	color: #000;
+	border-color: black;
+	background-color: black;
+	color: #EE2B45;
 }
 .btn--alt {
 	background-color: #000000;

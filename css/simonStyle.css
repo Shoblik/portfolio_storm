@@ -13,13 +13,14 @@
     background-color: transparent;
 }
 .projectItem {
-    display: block;
+    display: inline-block;
     width: 50%;
-    height: 0;
     padding: 14%;
     background-color: lightgreen;
     float: left;
     border: 1px solid black;
+    position: relative;
+    background-size: cover !important;
 }
 #portfolio-2 {
     margin-bottom: 100px;
@@ -241,8 +242,9 @@ and (min-width:1800px) {
     border: none;
     background-color: transparent;
 }
-
-
+.btn:focus {
+    outline: none;
+}
 
 
 

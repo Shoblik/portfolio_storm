@@ -1,0 +1,361 @@
+
+body, html {
+    font-family: arial;
+    margin: 0;
+    height: 100%;
+    background-image: url('http://cdn.ebaumsworld.com/mediaFiles/picture/2093252/83711051.jpg');
+    background-position: center;
+}
+header {
+    width: 100%;
+    height: 15vh;
+    background: black;
+    text-align: center;
+    background-color: rgba(0,0,0, .7);
+}
+header h1 {
+    margin: 0;
+    position: relative;
+    top: 4vh;
+    color: white;
+    font-size: 3em;
+    display: inline-block;
+    left: 4%;
+
+}
+header h2 {
+    position: absolute;
+    display: inline-block;
+    top: 2vh;
+    right: 87%;
+    color: lightGreen;
+    font-size: 2rem;
+}
+header .userPoints {
+    display: inline-block;
+    color: lightGreen;
+    right: 34%;
+    top: 3vh;
+    position: relative;
+    font-size: 3em;
+}
+header .compPoints {
+    display: inline-block;
+    color: red;
+    top: 3vh;
+    position: relative;
+    left: 12%;
+    font-size: 3em;
+
+}
+/*Main content area/////////////////////////////////////////////////////////////*/
+.row {
+    text-align: center;
+    position: relative;
+    width: 64%;
+    left: 20%;
+    bottom: 80%;
+}
+.row .card {
+    display: inline-block;
+    height: 24vh;
+    width: 14%;
+    margin: .3% .9%;
+    box-shadow: 5px 5px 10px #888888;
+    position: relative;
+    vertical-align: top;
+    -webkit-transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card .back {
+    background-color: rgba(0,0,0,.7);
+    z-index: 2;
+}
+.card .front {
+    background-color: rgba(255,255,255,.7);
+    transform: rotateY(180deg);
+
+}
+.front, .back {
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+    border: solid 1px white;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.card .foundCard {
+background-color: rgba(34,139,34, .7);
+transition: 1s;
+}
+.card .compFoundCard {
+    background-color: rgba(255,0,0, .7);
+    transition: 1s;
+}
+/*Card flip handlers/////////////////////////////////////////////////////////////*/
+
+.backFlip {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.flash {
+    color: green;
+}
+
+/*Inside leftBar/////////////////////////////////////////////////////////////////*/
+.rightBar .wrapper .settings {
+    position: relative;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.leftBar .wrapper h4, .rightBar .wrapper h4 {
+    font-size: 165%;
+    text-align: left;
+    margin: 5% 0 0 3%;
+
+}
+.leftBar .wrapper h3, .rightBar .wrapper h3 {
+    font-size: 220%;
+    text-align: left;
+    margin-left: 5%;
+}
+.leftBar .wrapper, .rightBar .wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    height: 81.5vh;
+    width: 100%;
+    color: lightgreen;
+}
+.leftBar {
+    display: inline-block;
+    width: 15%;
+    height: 85vh;
+    background-color: rgba(0,0,0, .7);
+    border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+}
+.tryCount, .timesPlayed, .accuracy, .compAccuracy, .difficulty {
+    height: 50px;
+    font-size: 3rem;
+    margin-left: 20%;
+}
+img {
+    height: 45%;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    pointer-events: none;
+    opacity: .8;
+}
+.leftBar .wrapper .accuracy {
+    margin: 0;
+    text-align: center;
+}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+.rightBar .wrapper h3, .rightBar .wrapper h4 {
+    text-align: center;
+}
+.rightBar {
+    display: inline-block;
+    width: 12%;
+    height: 85vh;
+    background-color: rgba(0,0,0, .7);
+    border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+    float: right;
+    text-align: center;
+
+}
+.rightBar .wrapper {
+    color: red;
+}
+.rightBar .wrapper .compAccuracy {
+    margin: 5% 0 0 0;
+}
+.reset {
+    position: relative;
+    top: 3vh;
+    width: auto;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    left: 50%;
+    font-size: 1.1rem;
+    transform: translateX(-50%);
+    border: 2px solid rgb(185, 0, 1);
+    background-color: rgba(0,0,0, .6);
+    color: rgb(185, 0, 1);
+    transition: .3s;
+}
+.reset.leftColumn {
+    width: 100px;
+}
+.reset:hover {
+    color: white;
+    background-color: rgb(185, 0, 1);
+}
+.rightBar .wrapper .settings {
+    position: relative;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 12px 0;
+}
+.rightBar .wrapper .info {
+    position: relative;
+    color: white;
+    top: 0;
+    cursor: pointer;
+    margin: 0;
+}
+.rightBar .wrapper .difficulty {
+    font-size: 2em;
+    margin: 0;
+    color: black;
+}
+.rightBar .wrapper .diffDiv {
+    margin-top: 10%;
+}
+.info > button {
+    height: 50px;
+    width: 90px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid rgb(1, 95, 254);
+    background-color: transparent;
+    color: rgb(1, 95, 254);
+    transition: .3s;
+}
+.info > button:hover {
+    background-color: rgb(1, 95, 254);
+    color: white;
+    transition: .3s;
+}
+.settings > button {
+    width: 90px;
+    height: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 2px solid rgb(255, 115, 1);
+    background-color: transparent;
+    color: rgb(255, 115, 1);
+    transition: .3s;
+}
+.settings > button:hover {
+    color: white;
+    background-color: rgb(255, 115, 1);
+}
+h4.diffDiv, div.difficulty {
+    background-color: rgba(255,255,255, .6);
+    margin: 0 !important;
+}
+h4.diffDiv {
+    padding-top: 13px;
+}
+/*//////////////////////////////////////MODAL////////////////////////////////////////////////////////////*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(0,0,0, .7);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 28%;
+    color: white;
+}
+.modal-body h1 {
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-footer .reset {
+    left: 50%;
+    transform: translate(-50%);
+    top: initial;
+}
+/*/////////////////////////////////////Settings////////////////////////////////*/
+.buttonWrapper {
+    margin: auto;
+    text-align: center;
+}
+.difficultyBtn {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.easy {
+    border: 2px solid #6da06f;
+    background-color: transparent;
+    color: #6da06f;
+    transition: .3s;
+}
+.easy:hover {
+    background-color: #6da06f;
+    color: white;
+}
+.medium {
+    border: 2px solid #ffbb43;
+    background-color: transparent;
+    color: #ffbb43;
+    transition: .3s;
+}
+.medium:hover {
+    background-color: #ffbb43;
+    color: white;
+}
+.hard {
+    background-color: #c13525;
+    border: 2px solid #c13525;
+    background-color: transparent;
+    color: #c13525;
+    transition: .3s;
+}
+.hard:hover {
+    background-color: #c13525;
+    color: white;
+}
+span.close:hover {
+    border-radius: 50%;
+    color: white;
+}
+button:focus {
+    outline-color: initial;
+}

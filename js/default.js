@@ -59,20 +59,20 @@ $('a[data-rel]').each(function() {
 
 
 
-        $('.folio-project').on('click', function() {
-            var href = $(this).attr('href');
-            if ($('#ajax').is(':visible')) {
-                $('#ajax').css({ display:'block' }).animate({ height:'0' }).hide().slideUp('slow');
-            }
-            $('#ajax').html('');
-            
-            $('#ajax').show(0).animate({ height:'1200px' }, 500 ,function() {
-                $('#ajax').load(href, function() {
-                    $('#ajax').css('height','auto');
-                    $("html, body").animate({ scrollTop: $('#ajax').offset().top }, 300);
-                });
-            });
-        });
+        // $('.folio-project').on('click', function() {
+        //     var href = $(this).attr('href');
+        //     if ($('#ajax').is(':visible')) {
+        //         $('#ajax').css({ display:'block' }).animate({ height:'0' }).hide().slideUp('slow');
+        //     }
+        //     $('#ajax').html('');
+        //
+        //     $('#ajax').show(0).animate({ height:'1200px' }, 500 ,function() {
+        //         $('#ajax').load(href, function() {
+        //             $('#ajax').css('height','auto');
+        //             $("html, body").animate({ scrollTop: $('#ajax').offset().top }, 300);
+        //         });
+        //     });
+        // });
         if (!$('#ip-container').hasClass('single')) {
             $(window).on("scroll", function(){ //when the user is scrolling...
                 if ($(window).scrollTop() >= 100) { //header hide by scroll

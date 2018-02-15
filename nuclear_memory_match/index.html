@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Match</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <base target="_blank">
+</head>
+<body onload='initializeApp()'>
+    <header>
+        <h2 class="turn">Your Turn!</h2>
+        <h1>Memory Match</h1>
+        <div class="userPoints">0</div>
+        <div class="compPoints">0</div>
+    </header>
+    <section class="leftBar">
+        <div class="wrapper">
+            <h3>Your stats:</h3>
+            <h4>Times played:</h4>
+            <div class="timesPlayed">0</div>
+            <h4>Try count:</h4>
+            <div class="tryCount">0</div>
+            <h4>Accuracy:</h4>
+            <div class="accuracy">0.0%</div>
+            <button class="reset leftColumn">Reset</button>
+
+        </div>
+    </section>
+    <section class="rightBar">
+        <div class="wrapper">
+            <h3>Comp Stats:</h3>
+            <h4>Accuracy:</h4>
+            <div class="compAccuracy">0.0%</div>
+            <h4 class="diffDiv">Difficulty:</h4>
+            <div class="difficulty">Medium</div>
+            <h4 class="settings"><button>Settings</button></h4>
+            <!--<h3 class="info" onclick="window.open('about_page/index.html')"><button>Info</button></h3>-->
+
+        </div>
+    </section>
+
+        <div class="row row1">
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+        </div>
+        <div class="row row3">
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"></div>
+                <div class="back"><img src="./images/worldSymbol.png"></div>
+            </div>
+        </div>
+
+</body>
+<!--//////////////////////////////////////modal//////////////////////////////////////-->
+
+
+<div class="modal">
+
+
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body"></div>
+        <div class="modal-footer"></div>
+    </div>
+
+</div>
+</html>
