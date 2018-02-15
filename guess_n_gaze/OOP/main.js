@@ -32,7 +32,7 @@ let controller = {
             });
             model.imgArray.splice(randomNum, 1);
             if (model.imgArray.length === 0) {
-                let images = ['../images/yosemite_background.jpg','../images/j_tree_landscape.jpg','../images/landscape_from_j_tree.jpg','../images/orange_lake.jpg','../images/glacier_mtn_park.jpg'];
+                let images = ['https://simonhoblik.com/guess_n_gaze/images/yosemite_background.jpg','https://simonhoblik.com/guess_n_gaze/images/j_tree_landscape.jpg','https://simonhoblik.com/guess_n_gaze/images/landscape_from_j_tree.jpg','https://simonhoblik.com/guess_n_gaze/images/orange_lake.jpg','https://simonhoblik.com/guess_n_gaze/images/glacier_mtn_park.jpg'];
                 model.imgArray = images;
 
             }
