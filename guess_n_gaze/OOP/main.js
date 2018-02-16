@@ -38,6 +38,7 @@ let controller = {
             }
         }, 1000);
     },
+
     langInputHandler: function() {
         let newLang = $('#langInput').val();
         model.currentLanguage = newLang;
