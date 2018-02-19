@@ -73,8 +73,13 @@
         width: 100%;
     }
     .icon {
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
+    }
+    .btn {
+        padding: 10px 30px;
+        font-size: 13px;
+        min-width: 90px;
     }
 }
 
@@ -91,20 +96,25 @@
         font-size: 3rem;
         width: 100%;
     }
-    .projectItem {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: 42%;
-    }
-    .projectItem:hover .hoverFilter {
-        display: block;
-        background-color: rgba(0,0,0, .8);
+    /*.projectItem {*/
+        /*display: block;*/
+        /*position: relative;*/
+        /*width: 100%;*/
+        /*height: 0;*/
+        /*padding-top: 42%;*/
+    /*}*/
+    /*.projectItem:hover .hoverFilter {*/
+        /*display: block;*/
+        /*background-color: rgba(0,0,0, .8);*/
 
-    }
+    /*}*/
     #owl-main-text {
         margin-top: -280px !important;
+    }
+    .btn {
+        padding: 10px 30px;
+        font-size: 13px;
+        min-width: 90px;
     }
 }
 /*laptops ----------- */
