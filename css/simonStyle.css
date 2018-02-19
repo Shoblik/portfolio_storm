@@ -73,21 +73,26 @@
         width: 100%;
     }
     .icon {
-        height: 90px;
-        width: 90px;
-    }
-    .portfolio-thumb, .portfolio-inner {
-        opacity: 1;
-        visibility: visible;
-        background-color: rgba(0,0,0, 0.5);
-    }
-    .portfolio-thumb:hover .portfolio-dark-overlay {
-        opacity: 1;
-        visibility: visible;
+        height: 80px;
+        width: 80px;
     }
     .btn {
-        min-width: 123px;
+        padding: 10px 30px;
+        font-size: 13px;
+        min-width: 90px;
     }
+    /*.portfolio-thumb, .portfolio-inner {*/
+        /*opacity: 1;*/
+        /*visibility: visible;*/
+        /*background-color: rgba(0,0,0, 0.5);*/
+    /*}*/
+    /*.portfolio-thumb:hover .portfolio-dark-overlay {*/
+        /*opacity: 1;*/
+        /*visibility: visible;*/
+    /*}*/
+    /*.btn {*/
+        /*min-width: 123px;*/
+    /*}*/
 }
 
 /*phone screen size*/
@@ -103,34 +108,27 @@
         font-size: 3rem;
         width: 100%;
     }
-    .projectItem {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: 42%;
-    }
-    .projectItem:hover .hoverFilter {
-        display: block;
-        background-color: rgba(0,0,0, .8);
+    /*.projectItem {*/
+        /*display: block;*/
+        /*position: relative;*/
+        /*width: 100%;*/
+        /*height: 0;*/
+        /*padding-top: 42%;*/
+    /*}*/
+    /*.projectItem:hover .hoverFilter {*/
+        /*display: block;*/
+        /*background-color: rgba(0,0,0, .8);*/
 
-    }
+    /*}*/
     #owl-main-text {
         margin-top: -280px !important;
     }
-    .portfolio-thumb, .portfolio-inner {
-        opacity: 1;
-        visibility: visible;
-        background-color: rgba(0,0,0, 0.5);
-    }
-    .portfolio-thumb:hover .portfolio-dark-overlay {
-        opacity: 1;
-        visibility: visible;
-    }
-    .btn {
-        min-width: 123px;
-    }
 
+    .btn {
+        padding: 10px 30px;
+        font-size: 13px;
+        min-width: 90px;
+    }
 }
 /*laptops ----------- */
 @media only screen
