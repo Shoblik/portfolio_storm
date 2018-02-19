@@ -81,6 +81,18 @@
         font-size: 13px;
         min-width: 90px;
     }
+    .portfolio-thumb, .portfolio-inner {
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(0,0,0, 0.5);
+    }
+    .portfolio-thumb:hover .portfolio-dark-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn {
+        min-width: 123px;
+    }
 }
 
 /*phone screen size*/
@@ -111,6 +123,7 @@
     #owl-main-text {
         margin-top: -280px !important;
     }
+
     .btn {
         padding: 10px 30px;
         font-size: 13px;
