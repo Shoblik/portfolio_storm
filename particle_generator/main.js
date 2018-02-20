@@ -1,16 +1,16 @@
 $(document).ready(function () {
+    let lastColorSelection = localStorage.getItem('lastColorSelection');
+    if (lastColorSelection !== null) {
+      launch.colorArr = lastColorSelection.split(',');
+      $('.randomColorBtn').removeClass('btn-danger').addClass('btn-success').text('Random Color: Off');
+      launch.randomColor = false;
+      launch.appendColorDiv(launch.colorArr);
+      console.log('color selection ', lastColorSelection);
+    }
     launch.renderHistorySelection();
-
-    const el = document.getElementById('contentWrapper');
-    el.addEventListener('touchmove', function(e) {
-        for (let i=0; i<launch.multiplier; i++) {
-            launch.newCircle(e.touches[0].clientX, e.touches[0].clientY);
-        }
-    })
-
         $('#contentWrapper').on('mousemove', function () {
             for(let i=0; i<launch.multiplier; i++) {
-                launch.newCircle(event.clientX, event.clientY);
+                launch.newCircle();
             }
             if (rocketShipOption) {
                 launch.rocketBoost();
@@ -20,7 +20,7 @@ $(document).ready(function () {
         });
     $('#contentWrapper').on('click', function(e) {
             for (let i = 0; i < launch.splatterMultiplier; i++) {
-                launch.newCircle(event.clientX, event.clientY);
+                launch.newCircle();
             }
     });
     $('.navbar').on('mouseover', function () {
@@ -318,7 +318,7 @@ function Makecircles(maxTransTime, maxSize) {
     this.getRandom = function (max) {
         return Math.floor(Math.random() * max) + 1;
     };
-    this.newCircle = function (x,y) {
+    this.newCircle = function () {
         if ($('#randomSizeCheckbox').is(':checked')) {
             var size = this.size();
         } else {
@@ -346,10 +346,8 @@ function Makecircles(maxTransTime, maxSize) {
         }
 
         var newCircle = $('<div>').addClass('circle').css({
-            // 'top': event.clientY + 'px',
-            // 'left': event.clientX + 'px',
-            'top': y + 'px',
-            'left': x + 'px',
+            'top': event.clientY + 'px',
+            'left': event.clientX + 'px',
             'background-color': backgroundColor,
             'transition': transTime + 's',
             'height': size + 'px',
@@ -466,6 +464,7 @@ function Makecircles(maxTransTime, maxSize) {
     this.selectHistoryItem = (e)=> {
         let storageKey = e.currentTarget.textContent;
         let historyObj = JSON.parse(localStorage.getItem('particleHistory'));
+        let lastColorSelection = JSON.stringify(localStorage.setItem('lastColorSelection', historyObj[storageKey]));
         this.colorArr = historyObj[storageKey];
 
         $('.colorDiv').remove();

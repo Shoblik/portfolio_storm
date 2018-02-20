@@ -55,14 +55,7 @@ body {
     width: 100%;
     height: 100vh;
     position: absolute;
-    overflow: hidden;
-}
 
-#contentWrapper {
-    overflow:hidden;
-    position:fixed;
-    top:0;
-    bottom: 0;
 }
 .navbar {
     z-index: 20;
@@ -251,9 +244,6 @@ button.cursor {
     float: right;
     background-color: transparent;
     border: none;
-    position: fixed;
-    left: 100%;
-    transform: translate(-100%);
 }
 input#transDirection {
     margin-left: 5px;
@@ -267,7 +257,6 @@ input#transDirection {
     top: 15px;
     transform: translateX(-130px);
     display: inline-block;
-    position: fixed;
     z-index: 2000;
 }
 .openAll:hover {
