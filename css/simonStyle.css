@@ -150,7 +150,7 @@ and (min-width:1800px) {
     .landingTitle {
         position: absolute;
         left: 50vw;
-        top: 36vh;
+        top: 10vh;
         /* display: inline-block; */
         transform: translateX(-50%);
         font-size: 6vw;
