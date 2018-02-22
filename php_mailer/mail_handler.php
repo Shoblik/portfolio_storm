@@ -28,7 +28,7 @@ $output = [
     $mail->smtpConnect($options);
     $mail->From = 'webportfoliomailer@gmail.com';  // sender's email address (shows in "From" field)
     $mail->FromName = 'Web Portfolio Message';   // sender's name (shows in "From" field)
-    $mail->addAddress('shoblik@yahoo.com');  // Add a recipient
+    $mail->addAddress('7149483092@tmomail.net');  // Add a recipient
 
 //$mail->addAddress('ellen@example.com');                        // Name is optional
     $mail->addReplyTo($_POST['email']);                          // Add a reply-to address
