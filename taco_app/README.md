@@ -1,52 +1,26 @@
-# C10.17Hackathon 2
+# Taco'bout It
 
-Hackathon project involving the combination of different data sources into an application or game
+This repo is a web application created by a team of four during a full immersion web development program's hackathon. We were tasked to utitilize at least three distinct APIs in a web application in span of 36 hours.
 
-### Requirements
-- Combine at least 3 **external** resources via AJAX requests and present their information in an application
-- Must be documented loosely on JSDOC standards
-- Must be issue-managed via meistertask 
-  - share the meistertask with daniel.paschal@learningfuze.com
-  - name your project 10.17 Team [your team number] Hackathon
+## Feature List
+- Combined 4 **external API resources** via **AJAX** requests and present their information in an application
+  - Google Maps API
+  - Google Places API
+  - Taco Recipe API
+  - Google Image Search API
+- Organized our application with **Model, View, Controller** architectural pattern
+- Documented loosely on JSDOC standards
+- Project Team Management Tasks with Meistertask
 
+## Implemented
+- **API AJAX Requests**
+- **MVC** : Code properly formatted in MVC, variables and functions well define and documented
+- **Mobile Responsive** Design: Created a Web App with mobile-first approach
+- **UI / UX** : Simple and Intuitive UX
+- Task / Issue Management  : Development process documented, controlled, and delegated.  We had well-defined issues, milestones, and project management
 
-### Judging Criteria
-- **Appeal** : is it visually appealing / well put together
-- **Code Quality** : is the code properly formatted, are variables and functions well defined and documented
-- **Presentation** : How well is it presented during the unveiling session
-- **Task / Issue Management** : How well was the development process documented / controlled.  Were there well-defined issues, milestones, and project management
-- **Innovative / Transformative** : Did the project do something new and exciting?  Was it bold and tried to do things that haven't been done much.  Did it combine the data sources together in a way that was more useful than either source by itself
-- **Ease of Use / Understanding** : Was it easy to use the application / game, or if it was more complex, was the application or game able to provide you with tutorials or instructions that made understanding it a breeze.
-
-
-### Teams
-- Team 1
-  - Brian
-  - Francis
-  - Lori
-  - Sangwoo
-
-- Team 2
-  - Danika
-  - Marco
-  - Alicia
-  - Chung
-
-- Team 3
-  - Jay
-  - Josh
-  - Simon
-  - Jeffrey
-
-- Team 4
-  - Christian
-  - Christin
-  - Ryan
-  - Francesca
-  - Bruce
-
-
-
-### Deadline: 
-- 7:00PM Thursday, November 30, 2017
-
+## The Team
+- [Jay](https://github.com/jamesjayko)
+- [Jeffrey](https://github.com/Finleth)
+- [Josh](https://github.com/jaUXsh)
+- [Simon](https://github.com/Shoblik)

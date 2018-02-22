@@ -5,7 +5,6 @@ require_once('phpmailer/PHPMailer/PHPMailerAutoload.php');
 $output = [
   'success' => false,
 ];
-
     $mail = new PHPMailer;
     $mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
@@ -54,8 +53,5 @@ $output = [
     }
     $output = json_encode($output);
     print($output);
-
-
-
 
 ?>
