@@ -50,6 +50,7 @@ $output = [
 //    echo 'Message has been sent';
         $output['emailSent'] = true;
         $output['success'] = true;
+        $output['data'][] = 'stuff';
     }
     $output = json_encode($output);
     print($output);
