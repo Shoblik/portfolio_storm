@@ -73,7 +73,7 @@ $mail->Subject = "Testing";
 $mail->Body = "Testing";
 
 
-$mail->AddAddress( "7149483092@vtext.com" );
+$mail->AddAddress( "7149483092@tmomail.net" );
 var_dump( $mail->send() );
 
 
