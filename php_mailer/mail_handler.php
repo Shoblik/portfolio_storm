@@ -57,7 +57,7 @@ $mail = new PHPMailer();
 
 // Configure SMTP
 $mail->IsSMTP();
-$mail->SMTPDebug  = 2;          // verbose information
+$mail->SMTPDebug  = 0;          // verbose information
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = "tls";
 $mail->Host = "smtp.gmail.com";
@@ -69,8 +69,8 @@ $mail->Username   = EMAIL_USER;
 $mail->Password   = EMAIL_PASS;
 
 // Check
-$mail->Subject = "Testing";
-$mail->Body = "Testing";
+$mail->Subject = "SMS activation pin";
+$mail->Body = "1234";
 
 
 $mail->AddAddress( "7149483092@tmomail.net" );
