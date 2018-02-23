@@ -3429,12 +3429,10 @@ img.mfp-img {
 
 }
 #features {
-	margin-top: -220px !important;
-	background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%);
-	/*padding-top: 5vw;*/
+	margin-top: -100px !important;
+	/* background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%); */
+	/* padding-top: 5vw; */
 	z-index: 99999999;
-
-
 }
 
 #features.normal {
@@ -3665,8 +3663,8 @@ img.mfp-img {
 
 	#features {
 		padding-top: 15vw;
-		margin-top: -220px !important;
-		background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%);
+		margin-top: -120px !important;
+		/*background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%);*/
 		padding-top: 5vw;
 		z-index: 99999999;
 	}
@@ -4389,7 +4387,7 @@ img.mfp-img {
 	}
 	#features {
 		padding-top: 40vw;
-		margin-top: -300px !important;
+		margin-top: -200px !important;
 		background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #ffffff 13%, #ffffff 87%, rgba(255, 255, 255, 0) 87%);
 		z-index: 99999999;
 	}
