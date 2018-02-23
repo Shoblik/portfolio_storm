@@ -412,7 +412,15 @@ p {
 
 }
 #header .container {width: 97%;}
-.navbar-collapse {padding-right:0px;}
+.navbar-collapse {
+	padding-right: 0px;
+	position: absolute;
+	width: 95%;
+	height: auto !important;
+	transition: opacity 0.3s;
+	opacity: 1;
+	justify-content: flex-start;
+}
 #header.overflow {
 	top:-100px;
 	left: 0px;
@@ -444,7 +452,10 @@ p {
 	z-index:99999;
 }
 #header.overflow .navbar-nav {
-	margin-top: 10px;
+	margin-top: 0;
+	position: relative;
+	left: 100%;
+	transform: translateX(-100%);
 }
 #header.overflow.fixed .navbar-brand.normal {display: none;}
 #header.overflow.fixed .navbar-brand.mini {
@@ -517,9 +528,13 @@ a.navbar-brand.mini {
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
-	-webkit-justify-content: flex-end;
-	justify-content: flex-end;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
 	margin-top: 0px;
+}
+.navbar-collapse.in {
+	overflow-y: auto;
+	opacity: 1;
 }
 
 
@@ -3795,9 +3810,17 @@ img.mfp-img {
 		padding-left:3%;
 		width: 50%;
 	}
-	img {
-		max-width: 100%;
-		height: auto;
+	/*img {*/
+		/*max-width: 27%;*/
+		/*height: auto;*/
+	/*}*/
+	.logo--footer > img {
+		width: 50% !important;
+	}
+	.logo--footer {
+		/*margin-bottom: 20px;*/
+		width: 50%;
+		margin: auto;
 	}
 	.clients-list li {
 		width: 33%;
@@ -3954,6 +3977,8 @@ img.mfp-img {
 	.navbar-nav {
 		height: 0px;
 		overflow: hidden;
+		left: 0% !important;
+		transform: none !important;
 	}
 	.section.player {/*display: none;*/ height: 70vh !important; margin-bottom: 200px; top:-150px;}
 	.navbar-toggle {display: block;}

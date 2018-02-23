@@ -11,6 +11,9 @@ ul#nav  {
     color: white !important;
     font-family: sans-serif;
 }
+.logo--footer > img {
+    width: 13%;
+}
 
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
@@ -18,7 +21,7 @@ ul#nav  {
 }
 #home-slider::after {
     content: " ";
-    background: linear-gradient(176deg, rgba(255, 255, 255, 0) 40%, #ffffff 60%);
+    background: linear-gradient(178deg, rgba(255, 255, 255, 0) 40%, #ffffff 60%);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -248,7 +251,7 @@ p.hiddenIconName {
 }
 .phpStorm {
     background-image: url('../developer_icons/php_storm_icon.svg');
-    background-size: 100%;
+    background-size: 85%;
     border: none;
 }
 .react {
