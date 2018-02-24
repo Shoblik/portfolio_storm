@@ -460,7 +460,8 @@ p {
 #header.overflow.fixed .navbar-brand.normal {display: none;}
 #header.overflow.fixed .navbar-brand.mini {
 	display: block;
-	margin-top:0px;
+	margin-top: 0px;
+	font-family: helvetica;
 }
 a.navbar-brand.mini {
 	color: #ffffff;
