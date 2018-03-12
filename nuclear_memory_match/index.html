@@ -10,8 +10,8 @@
 <body onload='initializeApp()'>
     <header>
         <h2 class="turn">Your Turn!</h2>
-        <h1>Memory Match</h1>
         <div class="userPoints">0</div>
+        <h1>Memory Match</h1>
         <div class="compPoints">0</div>
     </header>
     <section class="leftBar">
@@ -27,19 +27,9 @@
 
         </div>
     </section>
-    <section class="rightBar">
-        <div class="wrapper">
-            <h3>Comp Stats:</h3>
-            <h4>Accuracy:</h4>
-            <div class="compAccuracy">0.0%</div>
-            <h4 class="diffDiv">Difficulty:</h4>
-            <div class="difficulty">Medium</div>
-            <h4 class="settings"><button>Settings</button></h4>
-            <!--<h3 class="info" onclick="window.open('about_page/index.html')"><button>Info</button></h3>-->
 
-        </div>
-    </section>
 
+    <div class="cardContainer">
         <div class="row row1">
             <div class="card">
                 <div class="front"></div>
@@ -119,6 +109,22 @@
             </div>
         </div>
 
+    </div>
+
+
+    <section class="rightBar">
+        <div class="wrapper">
+            <h3>Comp Stats:</h3>
+            <h4>Accuracy:</h4>
+            <div class="compAccuracy">0.0%</div>
+            <h4 class="diffDiv">Difficulty:</h4>
+            <div class="difficulty">Medium</div>
+            <button class="settings" id="settingsBtn">Settings</button>
+
+            <!--<h3 class="info" onclick="window.open('about_page/index.html')"><button>Info</button></h3>-->
+
+        </div>
+    </section>
 </body>
 <!--//////////////////////////////////////modal//////////////////////////////////////-->
 
