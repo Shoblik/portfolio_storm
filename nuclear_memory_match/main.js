@@ -1,25 +1,25 @@
 function initializeApp() {
     reset(false);
-    if (screen.width === 1024 && screen.height === 1366 || screen.width === 768 && screen.height === 1024 || screen.width < 800) {
-        console.log('please turn you device to landscape modes');
+    window.addEventListener('orientationchange', function() {
+        setTimeout(function() {
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                changeOrientationMessage();
+            } else {
+                let message = document.querySelector('.orientationMessage');
+                message.parentNode.removeChild(message);
+            }
+        }, 100);
+    });
+    if (window.matchMedia("(orientation: portrait)").matches) {
         changeOrientationMessage();
     }
-    window.addEventListener("orientationchange", function() {
-        if (screen.width === 1024 && screen.height === 1366 || screen.width === 768 && screen.height === 1024 || screen.width < 800) {
-            console.log('please turn you device to landscape modess');
-            changeOrientationMessage();
-        } else {
-            let messageDiv = document.querySelector('.orientationMessage');
-            messageDiv.parentNode.removeChild(messageDiv);
-        }
-    });
+
     const card = document.getElementsByClassName("card");
     //attach click handlers
     for (let i = 0; i < card.length; i++) {
         card[i].addEventListener('click', cardHandler);
     }
     document.querySelector("#settingsBtn").addEventListener('click', function() {
-        console.log('click');
         changeSettings();
     });
     document.querySelector(".close").addEventListener('click', function() {
@@ -62,14 +62,15 @@ var pickAnotherCard = true;
 var chanceOfRemembering = 8;
 
 function changeOrientationMessage() {
-    let div = document.createElement('div');
-    div.classList.add('orientationMessage');
-    let message = document.createElement('h3');
-    message.innerText = 'Please turn your device to landscape mode to view this app';
-    message.classList.add('orientationText');
-    div.appendChild(message);
+        let div = document.createElement('div');
+        div.classList.add('orientationMessage');
+        let message = document.createElement('h3');
+        message.innerText = 'Please turn your device to landscape mode to view this app';
+        message.classList.add('orientationText');
+        div.appendChild(message);
 
-    document.querySelector('body').appendChild(div);
+        document.querySelector('body').appendChild(div);
+
 }
 
 function reset(slowDown) {
@@ -178,7 +179,6 @@ function cardHandler(event) {
 }
 
 function compare() {
-    console.log(firstCard.parentNode, secondCard.parentNode);
     if (first === second) {
         //if the cards match things match here and card count get's reset to 0
         setTimeout(function() {
