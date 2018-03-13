@@ -10,7 +10,7 @@ function initializeApp() {
                     message.parentNode.removeChild(message);
                 }
                 catch(err) {
-                    console.log('error ', err);
+                    console.log('The device is already in portrait mode');
                 }
             }
         }, 100);
