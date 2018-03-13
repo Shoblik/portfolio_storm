@@ -104,6 +104,7 @@ h3.orientationText {
     color: white;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border: solid 1px white;
     border-radius: 15px;
     width: 100%;
