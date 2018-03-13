@@ -389,3 +389,73 @@ span.close:hover {
 button:focus {
     outline-color: initial;
 }
+
+
+/*///////////////////////////////////////////////*/
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+/*  UPDATED! flip the pane when hovered */
+.flip-container:hover .backs {
+    transform: rotateY(0deg);
+}
+.flip-container:hover .fronts {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .fronts, .backs {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.fronts, .backs {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.fronts {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.backs {
+    transform: rotateY(-180deg);
+}
+
+/*
+	Some vertical flip updates
+*/
+.vertical.flip-container {
+    position: relative;
+}
+
+.vertical .backs {
+    transform: rotateX(180deg);
+}
+
+.vertical.flip-container:hover .backs {
+    transform: rotateX(0deg);
+}
+
+.vertical.flip-container:hover .fronts {
+    transform: rotateX(180deg);
+}
