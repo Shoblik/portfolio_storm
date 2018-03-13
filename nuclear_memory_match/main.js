@@ -5,8 +5,13 @@ function initializeApp() {
             if (window.matchMedia("(orientation: portrait)").matches) {
                 changeOrientationMessage();
             } else {
-                let message = document.querySelector('.orientationMessage');
-                message.parentNode.removeChild(message);
+                try {
+                    let message = document.querySelector('.orientationMessage');
+                    message.parentNode.removeChild(message);
+                }
+                catch(err) {
+                    console.log('error ', err);
+                }
             }
         }, 100);
     });
