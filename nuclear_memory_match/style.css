@@ -91,6 +91,7 @@ h3.orientationText {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     cursor: pointer;
+    overflow: visible;
 }
 .card .back {
     background-color: rgba(0,0,0,.7);
