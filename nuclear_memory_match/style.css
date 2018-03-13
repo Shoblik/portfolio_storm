@@ -5,7 +5,7 @@ body, html {
     height: 100%;
     background-image: url('http://cdn.ebaumsworld.com/mediaFiles/picture/2093252/83711051.jpg');
     background-position: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 header {
     width: 100%;
@@ -397,6 +397,7 @@ button:focus {
 .flip-container {
     perspective: 1000px;
     transform-style: preserve-3d;
+    display: inline-block;
 }
 /*  UPDATED! flip the pane when hovered */
 .flip-container:hover .backs {
@@ -434,11 +435,13 @@ button:focus {
 .fronts {
     z-index: 2;
     transform: rotateY(0deg);
+    background-color: lightblue;
 }
 
 /* back, initially hidden pane */
 .backs {
     transform: rotateY(-180deg);
+    background-color: pink;
 }
 
 /*
