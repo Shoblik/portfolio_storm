@@ -88,6 +88,7 @@ h3.orientationText {
     box-shadow: 5px 5px 10px #888888;
     position: relative;
     vertical-align: top;
+    transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     cursor: pointer;
 }
@@ -98,7 +99,7 @@ h3.orientationText {
 .card .front {
     background-color: rgba(255,255,255,.7);
     transform: rotateY(180deg);
-
+    -webkit-transform:rotateY(180deg);
 }
 .front, .back {
     color: white;
@@ -111,8 +112,8 @@ h3.orientationText {
     height: 100%;
 }
 .card .foundCard {
-background-color: rgba(34,139,34, .7);
-transition: 1s;
+    background-color: rgba(34,139,34, .7);
+    transition: 1s;
 }
 .card .compFoundCard {
     background-color: rgba(255,0,0, .7);
@@ -122,6 +123,7 @@ transition: 1s;
 
 .backFlip {
     transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
     transition: 1s;
 }
 
