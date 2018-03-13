@@ -1,18 +1,18 @@
 function initializeApp() {
     reset(false);
-    // if (screen.orientation.angle === 0 && screen.width === 1024 && screen.height === 1366 || screen.orientation.angle === 0 && screen.width === 768 && screen.height === 1024 || screen.orientation.angle === 0 && screen.width < 800) {
-    //     console.log('please turn you device to landscape modes');
-    //     changeOrientationMessage();
-    // }
-    // window.addEventListener("orientationchange", function() {
-    //     if (screen.orientation.angle === 0 && screen.width === 1024 && screen.height === 1366 || screen.orientation.angle === 0 && screen.width === 768 && screen.height === 1024 || screen.orientation.angle === 0 && screen.width < 800) {
-    //         console.log('please turn you device to landscape modess');
-    //         changeOrientationMessage();
-    //     } else {
-    //         let messageDiv = document.querySelector('.orientationMessage');
-    //         messageDiv.parentNode.removeChild(messageDiv);
-    //     }
-    // });
+    if (screen.width === 1024 && screen.height === 1366 || screen.orientation.angle === 0 && screen.width === 768 && screen.height === 1024 || screen.orientation.angle === 0 && screen.width < 800) {
+        console.log('please turn you device to landscape modes');
+        changeOrientationMessage();
+    }
+    window.addEventListener("orientationchange", function() {
+        if (screen.width === 1024 && screen.height === 1366 || screen.orientation.angle === 0 && screen.width === 768 && screen.height === 1024 || screen.orientation.angle === 0 && screen.width < 800) {
+            console.log('please turn you device to landscape modess');
+            changeOrientationMessage();
+        } else {
+            let messageDiv = document.querySelector('.orientationMessage');
+            messageDiv.parentNode.removeChild(messageDiv);
+        }
+    });
     const card = document.getElementsByClassName("card");
     //attach click handlers
     for (let i = 0; i < card.length; i++) {
