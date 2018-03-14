@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.tileContainer {
+    width: 100vw;
+    height: 100vh;
+    /*background-color: lightblue;*/
+}
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: inline-block;
+    height: 6.25%;
+    width: 2.5%;
+}
+/*  UPDATED! flip the pane when hovered */
+.flip-container:hover .back {
+    transform: rotateY(0deg);
+}
+.flip-container:hover .front {
+    transform: rotateY(180deg);
+}
+
+.backFlip {
+    transform: rotateY(0deg);
+}
+.frontFlip {
+    transform: rotateY(180deg);
+}
+
+/*.flip-container, .front, .back {*/
+    /*width: 320px;*/
+    /*height: 480px;*/
+/*}*/
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: #E0601E;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(-180deg);
+    background-color: #0c5460;
+}
+
+/*
+	Some vertical flip updates
+*/
+.vertical.flip-container {
+    position: relative;
+}
+
+.vertical .back {
+    transform: rotateX(180deg);
+}
+
+/*.vertical.flip-container:hover .back {*/
+    /*transform: rotateX(0deg);*/
+/*}*/
+
+/*.vertical.flip-container:hover .front {*/
+    /*transform: rotateX(180deg);*/
+/*}*/
