@@ -11,6 +11,12 @@ ul#nav  {
     color: white !important;
     font-family: sans-serif;
 }
+.email:hover {
+    cursor: pointer;
+}
+a:focus, a:hover {
+    color: black;
+}
 .logo--footer > img {
     width: 13%;
 }
