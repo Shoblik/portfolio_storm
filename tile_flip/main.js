@@ -1,12 +1,17 @@
+let rowMultiplier = null;
+let columnMultiplier = null;
+
 $(document).ready(function() {
-   initializeApp();
+    parseTileDimensions();
+    initializeApp();
 });
 
 function initializeApp() {
-   leftToRightFlip();
+    setInterval(function() {
+        bottomLeftToTopRight();
+    }, 3500);
 }
-
-function leftToRightFlip() {
+function parseTileDimensions() {
     let screenWidth = window.innerWidth;
     let tileWidth = $('.flip-container').css('width');
     for (let i = 0; i < tileWidth.length; i++) {
@@ -14,7 +19,7 @@ function leftToRightFlip() {
             tileWidth = tileWidth.slice(0, i);
         }
     }
-    let columnMultiplier = Math.ceil(screenWidth / tileWidth);
+    columnMultiplier = Math.floor(screenWidth / tileWidth);
 
     let screenHeight = window.innerHeight;
     let tileHeight = $('.flip-container').css('height');
@@ -23,16 +28,19 @@ function leftToRightFlip() {
             tileHeight = tileHeight.slice(0, i);
         }
     }
-    let rowMultiplier = Math.ceil(screenHeight / tileWidth);
+    rowMultiplier = Math.ceil(screenHeight / tileWidth);
+}
 
+
+function bottomLeftToTopRight() {
     //column iterator
     let timer = 0;
     for (let row = 0; row < rowMultiplier; row++) {
         for (let column = 0; column < columnMultiplier; column++) {
             setTimeout(function() {
-                    $($('.flipper')[row * 40 + column]).css('transform', 'rotateY(180deg)');
-                }, timer);
-                timer += 5;
+                $($('.flipper')[row * (columnMultiplier + 1) + column]).toggleClass('flipped');
+            }, timer);
+            timer += 100;
             if (column + 1 === columnMultiplier) {
                 timer = 0;
             }
@@ -40,8 +48,21 @@ function leftToRightFlip() {
     }
 }
 
-// function createTile(tileCount) {
-//     for (let i = 0; i < tileCount; i++) {
-//
-//     }
-// }
+function leftToRight() {
+    let timer = 0;
+    for (let row = 0; row < rowMultiplier; row++) {
+        for (let column = 0; column < columnMultiplier; column++) {
+            setTimeout(function() {
+                $($('.flipper')[row * columnMultiplier + column]).toggleClass('flipped');
+                if (row === 0 && column === 0) {
+                    console.log($($('.flipper')[row * columnMultiplier + column]))
+                }
+            }, timer);
+            timer += 100;
+            if (column + 1 === columnMultiplier) {
+                timer = 0;
+            }
+        }
+    }
+}
+
