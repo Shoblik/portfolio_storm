@@ -26,8 +26,10 @@
     <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
     <link href="css/YTPlayer.css" rel="stylesheet">
     <link rel='stylesheet' href='css/simonStyle.css'>
+    <script src="./js/main.js"></script>
 
-  
+
+
 
     <!--[if lt IE 9]>
         <script src="./js/html5shiv.js"></script>
@@ -35,7 +37,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body onload="initializeApp()">
     
     <div id="ip-container" class="ip-container">
         <header class="ip-header">
@@ -343,7 +345,7 @@
                          <p><i class="fa fa-map-marker fa-lg"></i><span>2522 Tequestra</span> <span>Tustin Ca, 92782</span><span></span></p>
                     </div>
                     <div class="col-md-3">
-                         <p><i class="fa fa-envelope fa-lg"></i><span>Email me at</span><span>shoblik@yahoo.com</span></p>
+                         <p><i class="fa fa-envelope fa-lg"></i><span>Email me at</span><span onclick="window.location.href = 'mailto:shoblik@yahoo.com?subject=Subject&body=message%20goes%20here'">shoblik@yahoo.com</span></p>
                     </div>
                 </div>
                 <div class="col-md-12 jt_row jt_row-fluid jt_col column_container">
