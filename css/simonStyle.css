@@ -21,8 +21,9 @@ a:focus, a:hover {
     width: 13%;
 }
 .technologiesTitle {
-    padding-bottom: 20px;
-    font-size: 300%;
+    /*padding-bottom: 20px;*/
+    /*font-size: 300%;*/
+    font-family: Gotham-Medium;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {

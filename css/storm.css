@@ -108,7 +108,7 @@ tr,
 th,
 td {
 	border: 0;
-	font-family: inherit;
+	font-family: Gotham-Medium;
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
@@ -498,7 +498,7 @@ a.navbar-brand.mini {
 	color: white;
 }
 #header.overflow.fixed .navbar-toggle {
-	color:#000;
+	color: white;
 }
 #header .menu-item a {
 	color: white;
@@ -2587,11 +2587,11 @@ img.blog-image-tiny {
    ============================== */
 
 .we-are {
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
 	z-index: 14;
 	/*margin-top: -380px !important;*/
 	margin-top: -150px !important;
-	background: linear-gradient(356deg, rgba(255, 255, 255, 0) 13%, #F5F5F5 13%, #F5F5F5 87%, rgba(255, 255, 255, 0) 87%);
+	/*background: white;*/
 	padding: 150px 0px 50px;
 }
 
