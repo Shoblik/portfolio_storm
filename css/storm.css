@@ -4244,7 +4244,10 @@ img.mfp-img {
 		margin-top: 100px;
 		width: auto;
 	}
-	#owl-main-text {margin-top:-585px !important;}
+	#owl-main-text {
+		/* margin-top:-585px !important; */
+		bottom: 12vh;
+	}
 	.slide-content {
 		bottom: -165px !important;
 	}
@@ -5217,4 +5220,3 @@ nav ul{
 	position: absolute !important;
 	right: 40px !important;
 }
-

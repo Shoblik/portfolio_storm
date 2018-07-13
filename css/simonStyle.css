@@ -177,7 +177,7 @@ and (min-width:1800px) {
     .landingTitle {
         position: absolute;
         left: 50vw;
-        top: 10vh;
+        top: 20vh;
         /* display: inline-block; */
         transform: translateX(-50%);
         font-size: 6vw;
@@ -298,6 +298,3 @@ p.hiddenIconName {
 .btn:focus {
     outline: none;
 }
-
-
-
