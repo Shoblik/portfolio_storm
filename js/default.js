@@ -3,8 +3,11 @@
 
     $(window).load(function() {
       $(window).on("scroll", function(){ //when the user is scrolling...
+        if (window.screen.availWidth < 770) {
+          $('#header').addClass('fixed');
+          return;
+        }
         let scrollTo = document.querySelector('.customNav').getBoundingClientRect().top;
-        console.log(Math.ceil(scrollTo));
           if (Math.ceil(scrollTo) < 0) { //If user scroll entire home slider
               $('#header').addClass('fixed');
           } else {

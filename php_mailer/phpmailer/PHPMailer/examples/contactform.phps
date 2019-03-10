@@ -43,7 +43,7 @@ EOT;
             //but you shouldn't display errors to users - process the error, log it on your server.
             $msg = 'Sorry, something went wrong. Please try again later.';
         } else {
-            $msg = 'Message sent! Thanks for contacting us.';
+            $msg = 'Message sent! Thanks for contacting me.';
         }
     } else {
         $msg = 'Invalid email address, message ignored.';

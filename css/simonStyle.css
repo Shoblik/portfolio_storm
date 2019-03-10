@@ -340,3 +340,15 @@ p.hiddenIconName {
 .dynamicContent {
     position: relative !important;
 }
+.headerHide {
+  transform: translateY(-100%);
+  transition: .4s;
+}
+@media screen and (max-width: 770px) {
+  .customNav {
+    display: none;
+  }
+  .homeContent {
+    top: 50%;
+  }
+}
