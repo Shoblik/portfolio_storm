@@ -53,18 +53,19 @@ a:focus, a:hover {
     margin-bottom: 100px;
 }
 .landingTitle {
-    position: absolute;
+    position: relative;
     left: 50vw;
-    top: 11vh;
+    top: 220px;
     /*display: inline-block;*/
     transform: translateX(-50%);
-    font-size: 6vw;
+    font-size: 70px;
     color: white;
 }
 .backgroundFilter {
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(15,66,99, .5);
+    position: absolute;
 }
 .projectItem.particleGeneratorDemo, .projectItem.memoryMatchDemo, .projectItem.tacoAppDemo, .projectItem.petVetDemo, .projectItem.guessDemo {
     background-repeat: no-repeat;
@@ -147,9 +148,7 @@ a:focus, a:hover {
         /*background-color: rgba(0,0,0, .8);*/
 
     /*}*/
-    #owl-main-text {
-        margin-top: -280px !important;
-    }
+
 
     .btn {
         padding: 10px 30px;
@@ -162,14 +161,12 @@ a:focus, a:hover {
 and (min-width : 1224px)
 and (max-width: 1500px){
     .landingTitle {
-        top: 19vh;
+      top: 220px;
     }
     .slide-subtitle {
         bottom: -87px !important;
     }
-    #owl-main-text {
-        margin-top: -345px !important;
-    }
+
 }
 /*large screens*/
 @media only screen
@@ -177,7 +174,7 @@ and (min-width:1800px) {
     .landingTitle {
         position: absolute;
         left: 50vw;
-        top: 20vh;
+        top: 235px;
         /* display: inline-block; */
         transform: translateX(-50%);
         font-size: 6vw;
@@ -297,4 +294,49 @@ p.hiddenIconName {
 }
 .btn:focus {
     outline: none;
+}
+#owl-main-text, .dynamicContent {
+    magin: 0 !important;
+    padding: 0 !important;
+    transform: translate(0,0) !important;
+    position: relative !important;
+    margin-top: 165px !important;
+  }
+.landingTitle {
+    position: !important;
+    left: 50vw;
+    top: 0 !important;
+    transform: translateX(-50%);
+}
+.landingTitle {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: translateX(0%) !important;
+}
+.homeContent {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+.customNav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.customNav li a {
+    color: white;
+    font-size: 20px;
+}
+#owl-main-text, .dynamicContent {
+    magin: 0 !important;
+    padding: 0 !important;
+    transform: translate(0,0) !important;
+    /* position: relative !important; */
+    margin-top: 85px !important;
+    position: absolute;
+    height: 65px;
+    width: 100%;
+}
+.dynamicContent {
+    position: relative !important;
 }

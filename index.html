@@ -5,7 +5,7 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700%7CMerriweather:400,300%7CRaleway:800,600,500,400,300%7CLibre+Baskerville:400,400italic%7CMontserrat%7CRoboto:300%7COpen+Sans:300' rel='stylesheet' type='text/css'>-->
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>-->
 
-    
+
     <title>Simon Hoblik</title>
 
     <!-- META TAGS -->
@@ -37,7 +37,7 @@
 
 </head>
 <body onload="initializeApp()">
-    
+
     <div id="ip-container" class="ip-container">
         <header class="ip-header">
             <div class="ip-logo">
@@ -48,10 +48,10 @@
                     <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
                     <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
                 </svg>
-            </div>   
+            </div>
 
         </header>
-        <header id="header">
+        <header id="header" class="overflow">
             <div class="jt_row container">
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -80,32 +80,37 @@
         <!-- BEGIN SLIDER SECTION -->
 
             <section id="home-slider">
+              <div class='backgroundFilter'></div>
+              <div class='homeContent'>
                 <h1 class='landingTitle'>Simon Hoblik</h1>
-                <div class='backgroundFilter'></div>
-
-                <div class="slide-content">
-
+                <div class="customNav">
+                    <ul>
+                        <li class="page-scroll menu-item"><a href="#home-slider">Home</a></li>
+                        <li class="page-scroll menu-item"><a href="#features">Features</a></li>
+                        <li class="page-scroll menu-item"><a href="#about">About</a></li>
+                        <li class="page-scroll menu-item"><a href="#portfolio-2">Portfolio</a></li>
+                        <li class="page-scroll menu-item"><a href="#technologies">Technologies</a></li>
+                        <li class="page-scroll menu-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="dynamicContent">
                     <div id="owl-main-text" class="owl-carousel">
                         <div class="item">
-                            <h2>Front/Back End Web Developer</h2>
+                            <h2>Full Stack Developer</h2>
+                        </div>
+                        <div class="item">
+                            <h2>UI/UX Designer</h2>
                         </div>
                         <div class="item">
                             <h2>Problem Solver</h2>
                         </div>
-                        <div class="item">
-                            <h2>Passionate Developer</h2>
-                        </div>
                     </div>
-
                 </div>
-                <div class="slide-subtitle">
-                    <p>Here are some of my favorite projects</p>
-                    <div class="slide-sep"></div>
-                </div>
+              </div>
             </section>
         <!-- END SLIDER SECTION -->
-        
-     
+
+
 
 
 
@@ -146,13 +151,13 @@
         </section>
         <!-- END FEATURES SECTION -->
 
-        
+
         <!-- BEGIN ABOUT SECTION -->
         <section id="about" class="section about-us">
             <div class="container full-width">
                 <div class="jt_row jt_row-fluid row">
-                    
-                    <div class="col-md-6 jt_col column_container" id="our-studio-presentation">                    
+
+                    <div class="col-md-6 jt_col column_container" id="our-studio-presentation">
                             <h2 class="title invert-2">About Me</h2>
                         <div class="sub-title">
                                    I like to build things with like minded people.
@@ -187,7 +192,7 @@
 
                     <h3 class="title thin">SOME OF MY WORK</h3>
                     <p class="subtitle">I'm developing a number of special projects, here are some of my favorite</p>
-                    
+
             </div>
 
 
@@ -338,7 +343,7 @@
                 <div class="jt_row jt_row-fluid">
                     <div class="col-md-3 col-md-offset-1">
                         <p><i class="fa fa-mobile-phone fa-lg"></i><span>Call me at</span><span><a href="tel:+17149483092">714.948.3092</a></span></p>
-                         
+
                     </div>
                     <div class="col-md-4">
                          <p><i class="fa fa-map-marker fa-lg"></i><span>2522 Tequestra</span> <span>Tustin Ca, 92782</span><span></span></p>
@@ -396,8 +401,8 @@
     <script src="js/default.js"></script>
     <!-- END Scripts -->
 
-   
 
-    
+
+
 </body>
 </html>
