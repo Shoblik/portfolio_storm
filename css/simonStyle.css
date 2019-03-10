@@ -1,7 +1,7 @@
 /*********** Landing Page *************/
 
 #home-slider {
-    background-image: url(../images/somethinglogicalplease.jpg);
+    background-image: url(../images/city_gif.gif);
     background-size: cover;
     background-position: center bottom;
     text-align: center;
@@ -64,7 +64,7 @@ a:focus, a:hover {
 .backgroundFilter {
     height: 100%;
     width: 100%;
-    background-color: rgba(15,66,99, .5);
+    background-color: rgba(15,66,99, 0.7);
     position: absolute;
 }
 .projectItem.particleGeneratorDemo, .projectItem.memoryMatchDemo, .projectItem.tacoAppDemo, .projectItem.petVetDemo, .projectItem.guessDemo {
@@ -305,8 +305,8 @@ p.hiddenIconName {
     position: relative;
     top: 42%;
     transform: translateY(-50%);
-    /* display: inline-block; */
-    /* text-align: left; */
+    display: inline-block;
+    text-align: left;
 }
 .customNav li {
     display: inline-block;
