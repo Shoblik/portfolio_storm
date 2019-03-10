@@ -295,19 +295,6 @@ p.hiddenIconName {
 .btn:focus {
     outline: none;
 }
-#owl-main-text, .dynamicContent {
-    magin: 0 !important;
-    padding: 0 !important;
-    transform: translate(0,0) !important;
-    position: relative !important;
-    margin-top: 165px !important;
-  }
-.landingTitle {
-    position: !important;
-    left: 50vw;
-    top: 0 !important;
-    transform: translateX(-50%);
-}
 .landingTitle {
     position: relative !important;
     left: 0 !important;
@@ -316,8 +303,10 @@ p.hiddenIconName {
 }
 .homeContent {
     position: relative;
-    top: 45%;
+    top: 42%;
     transform: translateY(-50%);
+    /* display: inline-block; */
+    /* text-align: left; */
 }
 .customNav li {
     display: inline-block;
@@ -332,7 +321,8 @@ p.hiddenIconName {
     padding: 0 !important;
     transform: translate(0,0) !important;
     /* position: relative !important; */
-    margin-top: 85px !important;
+    margin-top: 200px !important;
+    font-family: helvetica;
     position: absolute;
     height: 65px;
     width: 100%;
@@ -343,6 +333,9 @@ p.hiddenIconName {
 .headerHide {
   transform: translateY(-100%);
   transition: .4s;
+}
+.customNav ul li:first-child {
+    margin-left: 5px;
 }
 @media screen and (max-width: 770px) {
   .customNav {
