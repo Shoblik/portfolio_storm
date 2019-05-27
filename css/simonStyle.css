@@ -397,3 +397,49 @@ h3.title {
 #technologies h3 {
     color: #555 !important;
 }
+
+section#contact {
+    background-color: #263c50;
+}
+input, textarea {
+    background-color: rgba(0,0,0, .7) !important;
+    border-color: black !important;
+    border-radius: 3px;
+}
+#contact h3.title.thin {
+    margin-top: 120px !important;
+}
+.contact .btn {
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+#contact form {
+    margin-bottom: 0;
+}
+.logo--footer > img {
+    width: 13%;
+    width: 120px !important;
+    margin: 25px 0;
+}
+.contact .btn {
+    margin-top: 50px;
+    opacity: .7;
+    color: #999;
+}
+#contact h3.title.thin {
+    margin-top: 120px !important;
+    color: #999 !important;
+}
+.contact .title:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #999;
+    left: 50%;
+    margin-left: -15px;
+    bottom: -12px;
+}
+a {
+   color: #0c0c0c;
+}

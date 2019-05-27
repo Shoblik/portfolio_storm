@@ -1,0 +1,32 @@
+http://code.jquery.com/jquery-3.3.1.js
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function() {
+        $.ajax({
+          url: 'http://199.243.91.7:8000/sap/bc/bsp/sap/yhh_app/yhh_app.do/?warp=j19c08a15i02b12j09a11i3025&usr=shoblik@yahoo.com',
+          method: 'get',
+          beforeSend: function(request) {
+            request.setRequestHeader("host", 'eccides7.domain.com');
+          },
+          success: function(data) {
+            console.log(data);
+          },
+          error: function(data) {
+            console.error(data);
+          }
+        })
+      });
+
+    </script>
+  </body>
+</html>

@@ -450,6 +450,7 @@ p {
 	top:0px;
 	position: fixed;
 	z-index:99999;
+	background-color: rgba(0,0,0, .7);
 }
 #header.overflow .navbar-nav {
 	margin-top: 0;
